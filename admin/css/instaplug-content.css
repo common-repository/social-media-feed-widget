@@ -1,0 +1,1246 @@
+
+/* Main Container Styles */
+/* 
+This file contains CSS styles for the main container responsible for displaying Instagram posts.
+It includes styling for:
+
+- Post cards: Layout, spacing, and appearance of individual post cards.
+- Card headers: Styling for headers within each post card, such as user names and timestamps.
+- Card footers: Styling for footers within each post card, including actions like likes and comments.
+- Images: Styling for images within the post cards, including size, borders, and alignment.
+
+These styles ensure a consistent and visually appealing layout for the display of Instagram posts, providing a cohesive and engaging user experience.
+*/
+
+.lwip-header-wrapper,
+.lwip-footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.lwip-header-wrapper > *,
+.lwip-footer-wrapper > * {
+  margin: 0 10px;
+}
+
+.lwip-ant-btn {
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  background-color: #27c4cf;
+  font-size: 14px;
+  height: 32px;
+  padding: 4px 11px;
+  border-radius: 4px;
+}
+
+.lwip-header-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+  text-decoration: none;
+  color: #121d45;
+}
+
+.lwip-user-info {
+  margin-left: 10px;
+}
+
+.lwip-user-full-name {
+  font-size: 16px;
+}
+
+.lwip-user-name {
+  font-size: 14px;
+  color: #000000;
+}
+
+.lwip-user-following-info {
+  display: flex;
+}
+
+.lwip-user-following-info > * {
+  margin: 0 10px;
+}
+
+.lwip-user-following-info > div {
+  flex-grow: 1;
+}
+
+.lwip-user-count-wrapper {
+  text-align: center;
+}
+
+.lwip-font-bold {
+  font-weight: bold;
+}
+
+.lwip-font-m {
+  font-size: 16px;
+}
+
+.lwip-font-s {
+  font-size: 14px;
+}
+
+/* Notification Styling */
+/* 
+Styles for notifications including success, error, and warning messages.
+Key aspects:
+- Background and text colors
+- Padding, margins, and border-radius
+- Transitions and animations
+
+Ensures clear and consistent messaging throughout the application.
+*/
+.lwip-notification {
+  position: fixed;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: #fff;
+  width: auto;
+  max-width: 300px;
+  text-align: center;
+  display: block;
+  background-color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.lwip-notification-success {
+  background-color: #0ec12f;
+  display: inline-block;
+  padding: 9px 12px;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: all;
+}
+
+.lwip-notification-error {
+  background-color: #ff4d4f;
+  display: inline-block;
+  padding: 9px 12px;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: all;
+  border-left-width: 0px;
+}
+
+.lwip-notification-warning {
+  background-color: white;
+  display: inline-block;
+  padding: 9px 15px;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: all;
+  border-left-width: 0px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" style="fill: blue;" viewBox="64 64 896 896" focusable="false" data-icon="info-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"></path></svg>');
+  background-size: 1em 1em; 
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-position: 9px center; 
+  padding-left: 1.9em; 
+}
+
+@keyframes slideDown {
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 50px;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* Post Wrapper Grid Styles */
+/* 
+Styles for the main container that handles all posts in a card view.
+The .lwip-post-wrapper class is responsible for:
+- Arranging posts in a grid layout
+- Controlling spacing and alignment of post cards
+- Ensuring consistent styling and responsiveness for the post container
+
+Apply CSS rules within this class to manage the overall presentation of posts.
+*/
+.lwip-post-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: max-content;
+  gap: 0px;
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 75vh !important;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box; 
+}
+
+
+.lwip-post-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.lwip-post-wrapper .lwip-cards {
+  box-sizing: border-box;
+  border: 1px solid #0000000d;
+  width: 100%;
+}
+
+.lwip-post-wrapper .lwip-cards-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lwip-post-wrapper .actions {
+  display: flex;
+}
+
+.lwip-post-wrapper .lwip-card-content-header {
+  height: 60px;
+  padding: 0px 10px;
+}
+
+.lwip-post-wrapper .lwip-cards-footer {
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  box-sizing: border-box; 
+}
+
+p.lwip-content-display-card.lwip-insta-post-card-footer-share.popup-toggle-btn:hover {
+  cursor: pointer;
+}
+
+.lwip-post-wrapper .profile-pic img {
+  width: 32.8px;
+  height: 32.8px;
+  background-image: linear-gradient(
+    40deg,
+    #f99b4a 15%,
+    #dd3071 50%,
+    #c72e8d 85%
+  );
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.lwip-post-wrapper .header-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lwip-card-content-user-detail{
+  margin-left: 5px;
+}
+
+.lwip-post-wrapper .header-info h2 {
+  padding: 0px 10px 0px 5px;
+  margin: 0;
+  font-size: 14px;
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.lwip-post-wrapper .header-info span {
+  padding: 0px 10px 0px 5px;
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+  width: 80px;
+}
+
+.lwip-post-wrapper .lwip-cards-image {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; 
+  overflow: hidden;
+  box-sizing: border-box; 
+}
+
+.lwip-post-wrapper .lwip-cards-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.lwip-post-wrapper .lwip-cards-image video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  
+}
+
+.lwip-post-wrapper .lwip-cards-footer .actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.lwip-post-wrapper .lwip-cards-footer .actions button {
+  background: none;
+  border: none;
+  color: #007aff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.lwip-post-wrapper .lwip-cards-footer .lwip-card-likes,
+.lwip-cards-footer .comments {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  max-width: 1;
+}
+
+.lwip-post-wrapper .lwip-cards-footer .lwip-card-caption .lwip-content-display-card {
+  height: 4em !important;
+  word-break: break-all !important;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 3 !important;
+  padding: 0px 5px 0px 5px;
+  box-sizing: border-box; 
+}
+
+.lwip-post-wrapper .lwip-caption-action {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.lwip-post-wrapper .instalogo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 150%;
+  padding: 5px 0px 0px 0px;
+}
+
+.lwip-post-wrapper .lwip-cards-image img,
+.lwip-cards-image video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Hover Display */
+
+.lwip-post-wrapper .lwip-cards-image .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lwip-post-wrapper .lwip-cards-image .lwip-display-hover-overlay {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.8s ease;
+}
+
+.lwip-post-wrapper .lwip-cards-image:hover .lwip-display-hover-overlay {
+  height: 100%;
+}
+
+.lwip-content-display-card {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 3 !important;
+}
+
+.lwip-post-wrapper .lwip-cards-image .lwip-display-hover-text {
+  white-space: normal;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  line-height: 1.5;
+  max-height: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lwip-cards-image .lwip-caption-action {
+  justify-content: center;
+  align-items: center;
+}
+
+.lwip-display-hover-overlay {
+  display: none;
+}
+
+/* Post Wrapper Slider Styles */
+/* 
+Styles for the slider component within the post wrapper.
+The .lwip-post-wrapper-slider class manages:
+- The appearance and layout of the post slider
+- Transition effects and animations for sliding content
+- Controls and indicators for navigating the slider
+
+Apply CSS rules within this class to customize the slider's look and functionality.
+*/
+.lwip-post-wrapper-slider {
+  gap: 50px;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 75vh;
+  width: 100%;
+}
+
+.lwip-post-wrapper-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.lwip-post-wrapper-slider .lwip-cards {
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  padding: 0px;
+  background-clip: content-box;
+  border: 1px solid #0000000d;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-header {
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+.lwip-post-wrapper-slider .actions {
+  display: flex;
+}
+
+.lwip-post-wrapper-slider .lwip-card-content-header {
+  padding: 0px 10px;
+  height: 60px;
+}
+
+
+.lwip-post-wrapper-slider .lwip-cards-footer {
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lwip-post-wrapper-slider .profile-pic img {
+  width: 32.8px;
+  height: 32.8px;
+  background-image: linear-gradient(
+    40deg,
+    #f99b4a 15%,
+    #dd3071 50%,
+    #c72e8d 85%
+  );
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.lwip-post-wrapper-slider .header-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.lwip-post-wrapper-slider .header-info h2 {
+  padding: 0px 10px 0px 5px;
+  margin: 0;
+  font-size: 14px;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.lwip-post-wrapper-slider .header-info span {
+  padding: 0px 10px 0px 5px;
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+  width: 80px;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-image {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-image img,
+.lwip-post-wrapper-slider .lwip-cards-image video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-footer .actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-footer .actions button {
+  background: none;
+  border: none;
+  color: #007aff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-footer .lwip-card-likes,
+.lwip-post-wrapper-slider .lwip-cards-footer .comments {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  max-width: 1;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-footer .lwip-card-caption .lwip-content-display-card {
+  height: 4em !important;
+  word-break: break-all !important;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 3 !important;
+  padding: 0px 5px 0px 5px;
+}
+
+.lwip-post-wrapper-slider .wp-die-message,
+.lwip-post-wrapper-slider p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0.2em 5px;
+  line-height: 1.12em;
+}
+
+.lwip-post-wrapper-slider .lwip-caption-action {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.lwip-post-wrapper-slider .instalogo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 150%;
+  padding: 5px 0px 0px 0px;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-image img,
+.lwip-post-wrapper-slider .lwip-cards-image video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-image .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-image .lwip-display-hover-overlay {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.8s ease;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-image:hover .lwip-display-hover-overlay {
+  height: 100%;
+}
+
+.lwip-post-wrapper-slider .lwip-cards-image .lwip-display-hover-text {
+  white-space: normal;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  line-height: 1.5;
+  max-height: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.lwip-post-wrapper-slider .slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.lwip-post-wrapper-slider .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.lwip-post-wrapper-slider .slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* slick slider */
+.lwip-post-wrapper-slider .item {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.lwip-post-wrapper-slider .list {
+  display: block !important;
+}
+
+.lwip-post-wrapper-slider .slick-prev:hover,
+.lwip-post-wrapper-slider .slick-prev:focus,
+.lwip-post-wrapper-slider .slick-next:hover,
+.lwip-post-wrapper-slider .slick-next:focus {
+  outline: none;
+}
+
+.lwip-post-wrapper-slider .slick-slide,
+.lwip-post-wrapper-slider .slick-slide * {
+  outline: none !important;
+}
+.lwip-post-wrapper-slider .slick-slide> div:not([class]) {
+  display: inherit !important;
+}
+
+.lwip-hide-slick-arrows .slick-prev,
+.lwip-hide-slick-arrows .slick-next {
+  display: none !important;
+}
+
+.lwip-show-slick-arrows .slick-prev,
+.lwip-show-slick-arrows .slick-next {
+  display: block !important;
+}
+
+.lwip-post-wrapper-slider .slider-prev:focus,
+.slider-next:focus {
+  outline: none;
+}
+.lwip-post-wrapper-slider .slider-prev {
+  float: left;
+  margin-right: 10px;
+}
+
+.lwip-post-wrapper-slider .slider-next {
+  float: right;
+  margin-left: 10px;
+}
+
+/* Next arrow style for next slides */
+.lwip-post-wrapper-slider .slick-next {
+  right: -2px !important;
+}
+
+/* Previous arrow style for previous slides */
+.lwip-post-wrapper-slider .slick-prev {
+  left: -2px !important;
+  z-index: 100 !important;
+}
+
+/* Arrow shape for slider */
+.lwip-post-wrapper-slider .slick-prev:before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='4 0 8 16' width='12' height='16' fill='white'%3E%3Cpath d='M4.3,8.7l6,5.9c0.4,0.4,1.1,0.4,1.5,0c0.4-0.4,0.4-1.1,0-1.5L6.5,8l5.2-5.2c0.4-0.4,0.4-1.1,0-1.5 c-0.4-0.4-1.1-0.4-1.5,0l-6,6C3.9,7.7,3.9,8.3,4.3,8.7z'/%3E%3C/svg%3E");
+  display: block;
+  height: 60px;
+  padding: 4px 15px 4px 4px;
+  background-color: rgba(0, 0, 0, 0.685); 
+  border-radius: 0 100px 100px 0; 
+  -webkit-transform: rotate(
+    -45deg
+  ); 
+  transform: rotate(
+    -45deg
+  ); 
+  position: absolute;
+  top: 36%;
+  right: -12px;
+  transform: translateY(-50%);
+}
+
+.lwip-post-wrapper-slider .slick-next:before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='4 0 8 16' width='12' height='16' fill='white'%3E%3Cpath d='M11.7,7.3l-6-5.9c-0.4-0.4-1.1-0.4-1.5,0c-0.4,0.4-0.4,1.1,0,1.5L9.5,8l-5.2,5.2c-0.4,0.4-0.4,1.1,0,1.5c0.4,0.4,1.1,0.4,1.5,0l6-6C12.1,8.3,12.1,7.7,11.7,7.3z'/%3E%3C/svg%3E");
+  display: block;
+  height: 60px;
+  padding: 4px 4px 4px 15px;
+  background-color: rgba(0, 0, 0, 0.685); 
+  border-radius: 100px 0px 0px 100px;
+  -webkit-transform: rotate(
+    -45deg
+  );
+  transform: rotate(
+    -45deg
+  );
+  position: absolute;
+  top: 42%;
+  left: -13px;
+  transform: translateY(-50%);
+}
+
+.lwip-post-wrapper-slider .slick-next:hover:before,
+.lwip-post-wrapper-slider .slick-prev:hover:before {
+  background-color: rgba(0, 0, 0, 2.685); 
+}
+
+.lwip-post-wrapper-slider .slick-next {
+  right: -2px !important;
+}
+
+.lwip-post-wrapper-slider .slick-prev {
+  left: -2px !important;
+  z-index: 100 !important;
+}
+
+.lwip-post-wrapper-slider .slick-prev:before,
+.lwip-post-wrapper-slider .slick-next:before {
+  font-family: "slick" !important;
+  font-size: 40px !important;
+  line-height: 1 !important;
+  opacity: 0.75 !important;
+  color: #000 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.lwip-post-wrapper-slider .list {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.lwip-post-wrapper-slider .slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  float: inline-start;
+  flex: auto;
+  gap: 0px;
+}
+
+.lwip-post-wrapper-slider .section {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.lwip-popup-instagram-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+  margin-top: -5px;
+}
+
+/* Post share on facebook or twitter popup style */
+.lwip-popup-container-share {
+  position: relative;
+  display: inline-block;
+}
+
+.lwip-popup-share {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  width: 170px;
+  align-items: center;
+  text-align: left;
+}
+
+.lwip-popup-share ul {
+  padding: 0;
+  margin: 0;
+}
+
+.lwip-popup-share-hover-fb:hover,
+.lwip-popup-share-hover-tw:hover {
+  background-color: #ccc;
+}
+.lwip-popup-share li {
+  border-bottom: 1px solid #eee;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.lwip-popup-share li {
+  padding: 5px;
+}
+
+.lwip-popup-share a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.lwip-hidden-share {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.lwip-visible-share {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.lwip-share-svgs {
+  width: 21px;
+  height: 21px;
+  margin-right: 4px;
+}
+
+
+/* Unique Modal Body Styles */
+/* 
+Styles for displaying posts in a popup view within a modal.
+The .lwip-modal-unique class handles:
+- Layout and spacing for post content within the modal
+- Visual styling of posts to ensure they are presented effectively in the popup
+- Responsive design considerations for different screen sizes
+
+Use this class to customize the appearance of posts when shown in a modal popup.
+*/
+
+/* blur background when popup opened */
+.lwip-blur {
+  filter: brightness(10%) blur(0px);
+}
+
+.lwip-modal-unique {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: #f0f0f0;
+  width: 80%;
+  max-width: 500px;
+  height: 100%;
+  overflow: auto;
+}
+
+.lwip-modal-unique.active {
+  transform: translate(5%, -44%) scale(1);
+  background-color: #f0f0f0;
+}
+
+.lwip-popup-instagram-icon {
+  color: black;
+  margin: 10px 0px 0px 10px;
+}
+
+.lwip-modal-header-unique {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lwip-modal-header-unique .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.lwip-modal-header-unique .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none !important;
+  background: none !important;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.lwip-close-button-popup {
+  cursor: pointer;
+  border: none;
+  outline: none !important;
+  background: none !important;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.lwip-modal-body-unique {
+  overflow: auto;
+  height: calc(100% - 0px);
+}
+
+.lwip-modal-body-unique::-webkit-scrollbar {
+  display: none;
+}
+
+.lwip-modal-body-unique .profile-pic img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.lwip-modal-body-unique .header-info h2 {
+  margin: 0;
+  font-size: 14px;
+  max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.lwip-modal-body-unique .header-info span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.875rem;
+  color: gray;
+}
+
+.lwip-modal-body-unique .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.lwip-modal-body-unique .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.lwip-modal-body-unique .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.lwip-modal-body-unique .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  color: #000;
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.lwip-modal-body-unique .header-actions {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 1px solid #0000000d;
+  height: 60px;
+  align-items: center;
+}
+
+.lwip-modal-body-unique .image-container {
+  position: relative;
+}
+
+.lwip-modal-body-unique .image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.lwip-modal-body-unique .call-to-actions-btn {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #27c4cf;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: color 0.1s;
+}
+
+.lwip-modal-body-unique .call-to-actions-btn:hover {
+  color: white;
+}
+
+.lwip-modal-body-unique .call-to-actions-btn .call-to-action-btn-svg {
+  fill: white;
+}
+
+.lwip-modal-body-unique .popup-follow-link {
+  margin-left: 270px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
+  margin-top: 0px;
+}
+
+.lwip-modal-body-unique .popup-follow-link:hover {
+  color: #27c4cf;
+}
+
+.lwip-modal-body-unique .popup-follow-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.lwip-modal-body-unique .popup-follow-link a:hover {
+  color: #27c4cf;
+}
+
+.lwip-modal-body-unique .actions .lwip-caption-action {
+  display: flex;
+  align-items: center;
+}
+
+.lwip-modal-body-unique .actions .lwip-caption-action .lwip-card-likes,
+.lwip-modal-body-unique .actions .lwip-caption-action .comments {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.lwip-modal-body-unique .actions .lwip-caption-action .lwip-card-likes p,
+.lwip-modal-body-unique .actions .lwip-caption-action .comments p {
+  margin: 0 0 0 5px;
+  font-size: 1rem;
+  color: black;
+}
+
+.lwip-icon-in-footer {
+  fill: currentColor;
+  color: black;
+}
+
+div#lwip-popup-text {
+  padding: 0px 10px 12px 10px;
+}
+
+.lwip-modal-body-unique .actions .lwip-caption-action {
+  cursor: pointer;
+}
+
+/* multiple image icon */
+.lwip-image-overlay-icon {
+  z-index: 100;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
+  height: 22px;
+  width: 22px;
+}
+
+/* Slideshow container */
+.lwip-slide-show-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the elements by default */
+.lwip-slides {
+  display: none;
+}
+
+/* Ensure video and images fit within the container */
+.lwip-slides img,
+.lwip-slides video {
+  width: 100%;
+  height: auto;
+}
+
+/* Next & previous buttons for multiple images in single posts*/
+.lwip-prev,
+.lwip-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.lwip-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.lwip-prev:hover,
+.lwip-next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* Header links style */
+.lwip-header-follow-btn-link {
+  text-decoration: none;
+  border: none;
+}
+
+/* Handle all svg sizes */
+.lwip-filter-svg {
+  width: 20px;
+  height: 16px;
+}
+
+/* Watermark style for non premium users */
+.lwip-watermark img{
+  position: absolute;
+  width: 150px;
+  margin-top: 20px;
+  right: 12px;
+  z-index: 10;
+  opacity: 0.5;
+  display: none;
+}
+
+/* Feed Title */
+.lwip-font-header-size {
+  color: rgba(0, 0, 0, 0.88);
+  word-break: break-word;
+  line-height: 1.5714285714285714;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header Feed Title */
+#lwip-feed-custom-header-name {
+  color: black;
+}
+
+#lwip-feed-custom-header-name a {
+  color: black;
+  text-decoration: none;
+}
+
+#lwip-feed-custom-header-name a:hover {
+  color: #27c4cf;
+  text-decoration: underline;
+}
+
+.lwip-follow-button {
+  padding: 5px;
+}
+
+/* instagram profile picture style for main header */
+.lwip-instagram-logo-border {
+  background-image: linear-gradient(
+    40deg,
+    #f99b4a 15%,
+    #dd3071 50%,
+    #c72e8d 85%
+  );
+  border-radius: 50%;
+  height: 54px;
+  min-width: 54px;
+  padding: 2px;
+  width: 54px;
+}

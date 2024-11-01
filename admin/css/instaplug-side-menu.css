@@ -1,0 +1,2240 @@
+/* Side Menu Styles */
+/* 
+This file contains the CSS styles for the side menu component of the application.
+It defines the visual appearance and layout of the side menu, including:
+
+- Positioning and sizing of the menu
+- Display and hiding transitions
+- Styling for menu items and active states
+
+These styles work in conjunction with JavaScript code that manages menu behavior, including showing and hiding the menu based on user interactions. Ensure that any changes in the CSS are consistent with the JavaScript logic to maintain a seamless and responsive user experience.
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.lwip-post-container-header {
+  background-color: #252525;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+#lwip-main-div {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: -20px;
+}
+
+.lwip-top-container {
+  display: flex;
+  flex: 1;
+  font-family: "Nunito", sans-serif;
+}
+
+.lwip-mobile-containers {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  font-family: "Nunito", sans-serif;
+}
+
+#lwip-signup-account-error{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lwip-menus {
+  display: flex;
+}
+
+.lwip-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.lwip-side-menu-handler-icons {
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: 100vh;
+  background-color: #252525;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.lwip-sub-side-bar {
+  width: 300px;
+  height: 100vh;
+  background-color: #252525;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding: 0;
+}
+
+.lwip-top-header-logo {
+  width: 40px;
+  height: 40px;
+  margin: 10px 15px 10px 15px;
+}
+
+.lwip-sidem-menu-simple-hover-img {
+  width: 75%;
+  height: 30%;
+  position: relative;
+  left: 8px;
+  display: block;
+  margin: auto;
+}
+
+.lwip-side-menu-images {
+  justify-content: center;
+}
+
+.lwip-side-menu-handler-svg-icons {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.lwip-side-menu-icons {
+  width: 57px;
+  height: 65px;
+  background-color: #252525;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  margin-left: 7px;
+  border: 1px solid rgba(5, 5, 5, 0.06);
+  border-radius: 10px;
+}
+
+.lwip-side-menu-source-icon {
+  margin-top: 10px;
+}
+
+.lwip-side-menu-icon-txts {
+  font-size: 10px;
+}
+
+.lwip-side-menu-icons a {
+  font-size: 14px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.lwip-side-menu-icons:hover {
+  color: #27c4cf;
+  border-radius: 10px;
+}
+
+.lwip-label-icon-title {
+  width: 93%;
+  height: 100hv;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  padding-left: 4px;
+  padding-top: 19px;
+}
+
+.lwip-label-icon-title p {
+  margin-left: -80px;
+  font-size: 1em;
+}
+
+.lwip-slider-view-cls,
+.lwip-grid-view-cls ,
+.lwip-masonry-view-cls{
+  font-size: medium;
+  text-align: center;
+  color: #ffffff;
+  width: 69.58px;
+  height: 69.58px;
+}
+
+.lwip-premium-masonry-svg{
+  display: flex;
+  width: 83px;
+  margin-left: -8px;
+}
+
+.lwip-side-menu-all-layout-style-control {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lwip-side-menu-layout-style-handler {
+  cursor: pointer;
+  padding: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 118px;
+}
+
+.lwip-svg-img-fill {
+  fill: #ffffff;
+}
+
+.lwip-side-menu-inner-container-heading {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-size: 1.5em;
+}
+
+.lwip-sub-inner-container-h3 {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+h3.lwip-sub-inner-container-h3.top {
+  margin-top: 35px;
+}
+
+.lwip-radio-btn-label {
+  color: white;
+}
+
+.lwip-business-radio-label {
+  color: white;
+}
+
+.lwip-side-menu-inner-container-btns {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 16px 0px 0px;
+  padding: 6.42px 15px;
+  align-items: center;
+  border: 0px;
+}
+
+.lwip-side-menu-inner-container-post-span {
+  width: 244.75px;
+  height: 22px;
+}
+
+.lwip-post-margin {
+  margin: 17px 0px;
+}
+
+.lwip-side-menu-inner-container-btns svg {
+  width: 14px;
+  height: 14px;
+}
+
+.lwip-side-menu-inner-container-btns:hover {
+  color: #27c4cf;
+  border-color: #27c4cf;
+}
+
+.lwip-account-type label {
+  display: block;
+}
+
+.lwip-account-type {
+  display: block;
+}
+
+.lwip-business-radio-container,
+.lwip-personal-radio-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  height: 22px;
+}
+
+.lwip-account-type input[type="radio"] {
+  margin-right: 5px;
+}
+
+.lwip-account-type label {
+  margin-right: 10px;
+}
+
+.lwip-account-type span {
+  color: black;
+  margin-top: 2px;
+}
+
+.lwip-account-type input[type="radio"] {
+  order: 2;
+  margin-left: 10px;
+}
+
+.lwip-account-type span {
+  color: white;
+  order: 1;
+}
+
+input[type="radio"].lwip-select-account-type {
+  display: none;
+}
+
+.lwip-select-dropdwown , .lwip-select-option-dropdown {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  width: 120px; /
+}
+
+.lwip-select-dropdwown , .lwip-select-option-dropdown li {
+  padding: 8px 16px;
+  display: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.lwip-select-dropdwown , .lwip-select-option-dropdown li:last-child {
+  border-bottom: none;
+}
+
+.lwip-select-dropdwown , .lwip-select-option-dropdown .popup-selected-option {
+  display: block;
+}
+
+.lwip-select-dropdwown , .lwip-select-option-dropdown li:hover {
+  background-color: #f1f1f1;
+}
+
+.lwip-select-dropdwown , .lwip-select-option-dropdown.active li {
+  display: block;
+}
+
+
+label.lwip-radio-btn-label,
+label.lwip-business-radio-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+}
+
+input[type="radio"].lwip-select-account-type:checked + label {
+  border-color: #27c4cf;
+  background-color: #27c4cf;
+}
+
+input[type="radio"].lwip-select-account-type:checked + label::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+}
+
+.lwip-account-type input[type="radio"] {
+  margin-right: 5px;
+}
+
+.lwip-white-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 278px;
+  border-bottom: 1px solid #000000;
+}
+
+.lwip-white-container-facebook {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 278px;
+  border-bottom: 1px solid #000000;
+}
+
+.lwip-white-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lwip-white-container span button {
+  background-color: #27c4cf;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  width: 169px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lwip-white-container-txt {
+  text-align: center;
+}
+
+.lwip-white-container svg {
+  color: white;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.lwip-white-container span button:hover {
+  background-color: #69d1d8;
+}
+
+.lwip-white-container span {
+  display: flex;
+  align-items: center;
+}
+
+.lwip-white-container .span-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lwip-white-box-heading {
+  color: black;
+  display: flex;
+  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: 700;
+  width: 85%;
+  margin-bottom: unset;
+  margin: unset;
+}
+
+.lwip-connected-ac-txt {
+  color: black;
+  text-align: left; 
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  width: 84%;
+}
+
+.lwip-connected-ac-txt span {
+  font-weight: 700;
+}
+
+.lwip-top-right-header {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  flex-grow: 1; 
+}
+
+.lwip-rename-widget-btns {
+  display: flex;
+  width: auto;
+  height: 40px;
+  border: none;
+  background-color: #252525;
+  height: 28px;
+  font-size: 18px;
+  font-weight: 700;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.lwip-rename-widget-btns:hover {
+  color: #27c4cf;
+}
+
+.lwip-rename-widget-svg {
+  width: 18px;
+  height: 18px;
+}
+
+.lwip-rename-widget-span {
+  height: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-inline-start: 8px;
+  padding: 0;
+}
+
+.publish-button-lwip,
+.lwip-view-plans-button,
+.lwip-cancel-button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.04);
+  color: #fff;
+  border-radius: 6px;
+  border-color: #000000;
+  font-family: "Nunito", sans-serif;
+  width: 90px;
+  height: 35px;
+  margin-right: 5px;
+  border: 0px solid black;
+}
+
+.publish-button-lwip {
+  width: 72px;
+  height: 32px;
+  background-color: #27c4cf;
+  font-weight: 700;
+}
+
+.lwip-view-plans-button{
+  width: 100px;
+  height: 32px;
+  background-color: #0ec12f;
+  font-weight: 700;
+}
+
+.lwip-disable-publish-button {
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+  color: #595959;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+}
+
+.lwip-cancel-button {
+  width: 67px;
+  height: 32px;
+  background-color: #ff4d4f;
+  font-weight: 700;
+}
+
+.lwip-hide-menu-inner-header-controller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -14px;
+}
+
+.lwip-back {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  width: 60px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.lwip-back:hover {
+  background-color: #f17b7c;
+}
+
+.lwip-done {
+  background-color: #27c4cf;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-right: -60px;
+  width: 60px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.column-row-container-lwip {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  height: 340px;
+  border-bottom: 1px solid #000000;
+  margin-left: 15px;
+  font-family: "Nunito", sans-serif;
+  margin-top: 20px;
+}
+
+.lwip-column-texts {
+  color: #000000;
+  font-size: 16px;
+  align-self: flex-start;
+  display: inline-block;
+  flex: 1;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 12px;
+  margin-left: 3px;
+}
+
+.lwip-column-menu-content {
+  font-size: 16px;
+  align-self: flex-start;
+  display: inline-block;
+  flex: 1;
+  width: 270px;
+  height: 250px;
+  white-space: nowrap;
+  margin-left: -5px;
+  border-top: 1px #f0f0f0 solid;
+  text-align: center;
+}
+
+.lwip-column-menu-sub-content {
+  font-size: 16px;
+  align-self: flex-start;
+  display: inline-block;
+  flex: 1;
+  width: 270px;
+  height: 250px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.lwip-column-auto-manuall-content {
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  text-align: center;
+  margin-top: 8px;
+  border: #000000 0px solid;
+  width: 130px;
+  margin-left: 70px;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.lwip-column-auto-manuall-content .lwip-auto-button,
+.lwip-column-auto-manuall-content .lwip-menual-button {
+  height: 100%;
+  text-align: center;
+  border: none;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  padding: 15px;
+}
+
+.lwip-auto-button {
+  border-right: none !important;
+}
+.lwip-menual-button {
+  border-left: none !important;
+}
+
+.lwip-column-auto-manuall-content .lwip-auto-button {
+  color: rgb(0, 0, 0);
+}
+
+.lwip-column-auto-manuall-content .lwip-menual-button {
+  color: rgb(0, 0, 0);
+}
+
+.lwip-column-auto-manuall-content .lwip-auto-button:hover {
+  color: #27c4cf;
+}
+
+.lwip-column-auto-manuall-content .lwip-menual-button:hover {
+  color: #27c4cf;
+}
+
+.lwip-column-manual-button-conteiner > div {
+  height: 40px;
+  background-color: white;
+  width: 225px;
+  border-radius: 8px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  justify-content: flex-start;
+  border: 1px solid #f0f0f0;
+  padding: 4px;
+  margin-left: 18px;
+}
+
+.lwip-column-manual-button-conteiner-text {
+  color: #000000;
+  text-align: left;
+  padding: 5px;
+}
+
+.lwip-column-manual-button-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.lwip-column-manual-button-conteiner-column-number {
+  width: 54px;
+  height: 0px;
+  margin-left: 100px;
+}
+
+.lwip-column-manual-button-conteiner-column-number:hover {
+  border: 1px solid #27c4cf;
+}
+
+.lwip-column-manual-button-conteiner-width-number {
+  width: 54px;
+  height: 0px;
+  margin-left: 92px;
+}
+
+.lwip-column-manual-button-conteiner-width-number:hover {
+  border: 1px solid #27c4cf;
+}
+
+.lwip-column-manual-button-conteiner-row-number {
+  width: 54px;
+  height: 0px;
+  margin-left: 122px;
+}
+
+.lwip-column-manual-button-conteiner-row-number:hover {
+  border: 1px solid #27c4cf;
+}
+
+.lwip-column-manual-button-conteiner-gap-number {
+  width: 54px;
+  height: 0px;
+  margin-left: 108px;
+}
+
+.lwip-column-manual-button-conteiner-gap-number:hover {
+  border: 1px solid #27c4cf;
+}
+
+.anticon.anticon-question-circle.ml-8.pointer {
+  cursor: pointer;
+  position: relative;
+}
+
+/* Tooltip container for information about elements */
+.anticon.anticon-question-circle.ml-8.pointer::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1;
+}
+
+/* Tooltip arrow */
+.anticon.anticon-question-circle.ml-8.pointer::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.anticon.anticon-question-circle.ml-8.pointer:hover::after,
+.anticon.anticon-question-circle.ml-8.pointer:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lwip-web-appearance::-webkit-outer-spin-button,
+.lwip-web-appearance::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button !important;
+  width: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  color: white;
+}
+
+.lwip-hover-btn {
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #ffffff;
+  font-size: 14px;
+  height: 32px;
+  width: 69px;
+}
+
+.lwip-hover-radius {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.lwip-simple-radius {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.lwip-slider-header {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 96%;
+  border-bottom: 1px solid #000000;
+  margin-top: 15px;
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+}
+
+.lwip-slider-header-popup {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 96%;
+  height: 325px;
+  border-bottom: 1px solid #000000;
+  margin-top: 20px;
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+}
+
+.lwip-layout-head-element {
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lwip-layout-inner-head-txt {
+  color: #000000;
+  font-size: 16px;
+  align-self: flex-start;
+  display: inline-block;
+  flex: 1;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  padding: 9px;
+}
+
+.lwip-main-header-element-container {
+  font-size: 14px;
+  flex: 1;
+  width: 232px;
+  height: 182px;
+  white-space: nowrap;
+  margin-left: -5px;
+  font-family: "Nunito", sans-serif;
+  border-top: 1px solid #f0f0f0;
+  line-height: 1.9;
+  padding: 14px;
+  padding-top: 0px;
+}
+
+#lwip-main-header-element-container-id input[type="checkbox"] {
+  display: none;
+}
+
+#lwip-main-header-element-container-id input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  color: black;
+}
+
+#lwip-main-header-element-container-id input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+}
+
+#lwip-main-header-element-container-id input[type="checkbox"]:checked + label::before {
+  background-color: #27c4cf;
+}
+
+#lwip-main-header-element-container-id input[type="checkbox"]:checked + label::after {
+  content: "\2714";
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  font-size: 10px;
+  color: white;
+}
+
+.lwip-main-header-element-container .LHcontentall {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  margin-left: 10px;
+}
+
+/* popup check box styles for post popup elements settings */
+#lwip-popup-element-css input[type="checkbox"] {
+  display: none;
+}
+
+#lwip-popup-element-css input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  color: black;
+}
+
+#lwip-popup-element-css input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+#lwip-popup-element-css input[type="checkbox"]:hover + label::before {
+  border: 1px solid #27c4cf;
+}
+
+#lwip-popup-element-css label:hover::before {
+  border: 1px solid #27c4cf;
+}
+
+#lwip-popup-element-css input[type="checkbox"]:checked + label::before {
+  background-color: #27c4cf;
+}
+
+#lwip-popup-element-css input[type="checkbox"]:checked + label::after {
+  content: "\2714";
+  position: absolute;
+  left: 4px;
+  top: -2px;
+  font-size: 10px;
+  color: white;
+}
+
+#lwip-popup-element-css .LHcontentall {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  margin-left: 10px;
+  visibility: hidden;
+}
+
+/* popup checkbox end */
+
+/* start simple and hover */
+#lwip-hover-simple-elements input[type="checkbox"] {
+  display: none;
+}
+
+#lwip-hover-simple-elements input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+#lwip-hover-simple-elements input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+#lwip-hover-simple-elements input[type="checkbox"]:checked + label::before {
+  background-color: #27c4cf;
+}
+
+#lwip-hover-simple-elements input[type="checkbox"]:checked + label::after {
+  content: "\2714";
+  position: absolute;
+  left: 4px;
+  top: -1;
+  font-size: 10px;
+  color: white;
+}
+
+#lwip-hover-simple-elements .LHcontentall {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  margin-left: 10px;
+  visibility: hidden;
+}
+
+label.isLifeTimeDeal::before {
+  background-color: white !important;
+}
+
+/* end simple and hover */
+
+/* toggle button start */
+/* The switch - the box around the slider */
+.lwip-round-switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+  margin-left: 95px;
+}
+
+/* Hide default HTML checkbox */
+.lwip-round-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider switch style*/
+.lwip-slider-switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  height: 22px;
+  width: 47px;
+}
+
+.lwip-slider-switch:before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .lwip-slider-switch {
+  background-color: #27c4cf;
+}
+
+input:focus + .lwip-slider-switch {
+  box-shadow: 0 0 1px #27c4cf;
+}
+
+input:checked + .lwip-slider-switch:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(24px);
+}
+
+.lwip-column-manual-button-conteiner-animation:focus {
+  border-color: #27c4cf; 
+  box-shadow: 0 0 5px #27c4cf; 
+  outline: none; 
+}
+
+/* Rounded sliders */
+.lwip-slider-switch.lwip-slider-round {
+  border-radius: 34px;
+}
+
+.lwip-slider-switch.lwip-slider-round:before {
+  border-radius: 50%;
+}
+
+/* End toggle button */
+
+/* slider setting style  */
+.lwip-slider-setting-div {
+  width: 97%;
+  height: 216px;
+  margin-left: 0px;
+  color: #000000;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+input#lwip-slider-animation-counter {
+  width: 75px;
+}
+
+input#lwip-slider-auto-play-counter {
+  width: 75px;
+}
+
+.lwip-slider-setting-arrow-control-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 12px;
+  width: 94%;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #000000;
+  margin-left: 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 8px 0px;
+}
+
+.lwip-slider-setting-arrow-control-container
+  .lwip-slider-setting-drag-control-container
+  .lwip-slider-setting-aenimation-container
+  .lwip-slider-setting-autoplay-container
+  span {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.lwip-slider-setting-drag-control-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  width: 94%;
+  border-bottom: 1px solid #000000;
+  margin-left: 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 8px 0px;
+}
+
+.lwip-slider-setting-aenimation-container {
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  width: 94%;
+  border-bottom: 1px solid #000000;
+  margin-left: 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 8px 0px;
+}
+
+#lwip-slider-range-controller {
+  width: 100%;
+  height: 4px;
+}
+
+input[type="range"].lwip-animation-range-slider {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 6px;
+  background: #ccc;
+}
+
+/* Thumb: webkit */
+input[type="range"].lwip-animation-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 10px;
+  width: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+}
+
+/* Hover, active & focus Thumb: Webkit */
+
+input[type="range"].lwip-animation-range-slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 5px  #a4f5f2;
+}
+
+input[type="range"].lwip-animation-range-slider:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 5px  #a4f5f2;
+}
+
+input[type="range"].lwip-animation-range-slider:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 5px  #a4f5f2;
+}
+
+.lwip-slider-setting-aenimation-container input[type=number]:focus{
+  border: 0.5px solid #27c4cf;
+}
+
+.lwip-slider-setting-autoplay-container input[type=number]:focus{
+  border: 0.5px solid #27c4cf;
+}
+
+.lwip-slider-setting-autoplay-container {
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  width: 94%;
+  border-bottom: 1px solid #000000;
+  margin-left: 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 8px 0px;
+}
+
+/* Styling for "Arrow Control" */
+.lwip-arrow-toggle {
+  margin-left: 100px;
+}
+
+.lwip-drag-toggle {
+  margin-left: 107px;
+}
+
+.lwip-column-manual-button-conteiner-animation {
+  width: 54px;
+  height: 0px;
+  margin-left: 100px;
+}
+
+.lwip-column-manual-button-conteiner-autoplay {
+  width: 54px;
+  height: 0px;
+  margin-left: 81px;
+}
+
+.lwip-feed-title-input {
+  width: 100%;
+  padding: 7px 11px;
+  height: 39px;
+  border-radius: 6px;
+}
+
+.lwip-feed-title-content-container {
+  margin-top: 10px;
+}
+
+.lwip-feed-title-input .note {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: grey;
+  text-align: justify;
+  margin: 14px 0px;
+}
+
+.lwip-side-menu-about-txts {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: grey;
+  text-align: justify;
+  margin: 14px 0px;
+}
+
+.lwip-feed-title-input-type input::placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+.lwip-button-svg {
+  margin: -3px;
+}
+
+/* Button style */
+/* Style for the first div */
+
+.lwip-bottom-content {
+  position: relative;
+  z-index: 1;
+}
+
+.lwip-simple-hover-btn-css {
+  margin-left: 0px;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.lwip-simple-hover-sub-div {
+  height: 40px;
+  margin: 20px auto;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lwip-elements-posts {
+  font-size: 14px;
+  flex: 1;
+  width: 232px;
+  height: 182px;
+  white-space: nowrap;
+  margin-left: -5px;
+  font-family: "Nunito", sans-serif;
+  line-height: 2;
+  padding: 14px;
+  padding-top: 0px;
+}
+
+.lwip-popup-elements-span {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
+.lwip-elements-posts > div {
+  gap: 5px;
+}
+
+.lwip-elements-posts > span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.lwip-insta-post-card-header-elements {
+  height: 300px;
+  font-family: "Nunito", sans-serif;
+  background-color: #252525;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.lwip-insta-post-card-header-elements > div {
+  margin-bottom: 0.5rem;
+}
+
+.lwip-insta-post-card-header-elements > div > span {
+  margin-bottom: 1rem;
+}
+
+.lwip-insta-post-card-header-elements #lwip-insta-post-hover-elements span,
+.lwip-insta-post-card-header-elements #lwip-insta-post-simple-elements span {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.lwip-sub-elements-posts {
+  background-color: #252525;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.lwip-hover-simple {
+  color: #252525;
+}
+
+.hover-color {
+  background-color: #27c4cf !important;
+  color: rgb(0, 0, 0);
+}
+
+.lwip-hover-simple:hover {
+  color: #000000 !important;
+}
+
+.lwip-post-click-btn-drop-down {
+  width: 100%;
+  height: 56px;
+  padding: 12px;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: white;
+  font-family: "Nunito", sans-serif !important;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  margin: 16px 0px 0px;
+  align-items: center;
+  border: 0px;
+}
+
+/* Langue module styles */
+.lwip-langue-container {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 97%;
+  height: 86px;
+  border-bottom: 1px solid #f0f0f0;
+  font-family: "Nunito", sans-serif;
+  margin: 17px 0px;
+}
+
+.lwip-langue-setting-btn-drop-down {
+  background-color: #ffffff;
+  border-top: #f0f0f0 1px solid;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.88);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin-left: -5px;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.lwip-langue-container .lwip-langue-setting-btn-drop-down .lwip-select-option-dropdown {
+  margin-right: 8px;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  padding: 0 53px 0 8px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.lwip-select-option-dropdown option {
+  cursor: pointer !important;
+}
+
+.lwip-select-option-dropdown::-webkit-scrollbar {
+  width: 12px;
+}
+
+.lwip-select-option-dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.lwip-select-option-dropdown::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.lwip-select-option-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.lwip-langue-container .lwip-langue-box-heading {
+  color: #1d2327;
+  font-size: 1.3em;
+  margin: 6px 0;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.lwip-left-text {
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+/* Call to action buttons styles */
+.lwip-cta-item {
+  display: flex;
+  background-color: white;
+  width: 91%;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.lwip-cta-item a {
+  color: black;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lwip-cta-item svg {
+  width: 14px;
+  height: 14px;
+}
+
+.lwip-button-container {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 61%;
+  width: 100px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+  display: inline-grid;
+}
+
+.lwip-cta-svgs {
+  position: relative;
+  display: inline-block;
+}
+
+.lwip-cta-svgs:hover {
+  cursor: pointer;
+}
+
+.lwip-cta-item:hover .lwip-button-container {
+  visibility: visible;
+}
+
+.lwip-cta-item:hover #lwip-call-to-action-new-value-add-btn {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.lwip-cta-text-label {
+  display: flex;
+  align-items: circle;
+  width: 470px;
+}
+
+.lwip-button-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 61%;
+  width: 100px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.lwip-cta-item:hover .lwip-button-container {
+  display: inline-grid;
+}
+
+.lwip-delete-btn,
+.lwip-update-btn {
+  background-color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.lwip-delete-btn:hover,
+.lwip-update-btn:hover {
+  background-color: #ccc;
+}
+
+
+/* Rename Widget Popup Styles */
+/* 
+Styles for the "Rename Widget" popup modal.
+The .lwip-ant-modal-content class handles:
+- Layout and appearance of the rename widget modal
+- Visual styling of form elements, buttons, and text fields
+- Ensuring a user-friendly interface for renaming widgets
+
+Use this class to customize the look and feel of the rename widget popup to enhance usability and clarity.
+*/
+
+
+.lwip-opacity-0-5 {
+  filter: brightness(10%) blur(0px);
+}
+
+.lwip-ant-modal-content {
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  background-color: white;
+  width: 302px;
+  padding: 20px 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  border-radius: 8px;
+}
+
+.lwip-ant-modal-content.open {
+  display: block;
+}
+
+.lwip-ant-modal-title {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.lwip-ant-form-item {
+  margin-bottom: 15px;
+}
+
+.lwip-ant-form-item-label {
+  display: flex;
+  width: 100px;
+  padding: 0px 0px 8px;
+  align-items: center;
+}
+
+.lwip-ant-form-item-label-content::after {
+  display: flex;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: "*";
+  margin-right: 4px;
+  align-items: center;
+}
+
+.lwip-ant-input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.lwip-ant-btn {
+  padding: 8px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.lwip-ant-btn-primary {
+  background-color: #27c4cf;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.lwip-ant-btn-dangerous {
+  background-color: #ff4d4f;
+}
+
+/* Button container */
+.lwip-d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lwip-full-width-popup-button {
+  width: 148px;
+  height: 32px;
+}
+
+.lwip-btn-rounded {
+  border-radius: 8px;
+}
+
+.lwip-ant-input-clear-icon {
+  cursor: pointer;
+}
+
+/* Define keyframe animation for top-to-center and slightly left */
+@keyframes topToCenter {
+  from {
+    transform: translateY(-200%) translateX(-50%); 
+  }
+  to {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+/* Apply animation to the modal */
+#lwip-open-rename-widget-popup {
+  animation: topToCenter 0.2s ease;
+}
+
+/* Rename popup end*/
+
+/* Handle mobile view */
+.lwip-lwip-mobile-button {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 39%;
+  height: 80%;
+  margin: 0 auto;
+  transform: translate(10px, -30px);
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 #0003;
+  max-width: 325px;
+}
+
+.lwip-lwip-mobile-button::-webkit-scrollbar {
+  display: none;
+}
+
+.lwip-mobile-desktop-view-svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.lwip-mobile-button {
+  position: fixed;
+  top: 100px; 
+  right: 0px; 
+  z-index: 100;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Premium Modal Content Styles */
+/* 
+Styles for the "Buy Premium" popup modal.
+The .lwip-ant-modal-content-primium class manages:
+- Layout and appearance of the premium purchase modal
+- Visual elements such as headings, buttons, and content sections
+- Styling to emphasize the premium offer and guide user actions
+
+Apply CSS rules within this class to ensure the modal effectively communicates the premium offer and engages users.
+*/
+
+#lwip-premium-purchase-popup {
+  display: none;
+}
+
+.lwip-opacity-0-5 {
+  filter: brightness(50%) blur(0px);
+}
+
+.lwip-ant-modal-body{
+  padding-bottom: 10px;
+}
+
+.lwip-ant-modal-content-primium {
+  position: fixed;
+  top: 100px;
+  left: 35%;
+  background-color: white;
+  width: 396px;
+  padding: 20px 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  border-radius: 8px;
+  display: none;
+}
+
+.lwip-ant-modal-content-primium .open {
+  display: block;
+}
+
+.lwip-ant-modal-close {
+  height: 32px;
+  width: 32px;
+  font-size: 15px;
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.lwip-premium-popup-cancel-btn-svg{
+  display: flex;
+  margin: 0 2px 0 2px;
+}
+
+.lwip-ant-modal-close:hover,
+.lwip-ant-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.lwip-ant-modal-close:active{
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.lwip-feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  height: 100%;
+}
+
+.lwip-feature-modal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lwip-feature-modal-header svg {
+  height: -webkit-max-content;
+  height: max-content;
+  transform: translateY(2px);
+  width: 20px;
+  margin-right: 10px;
+}
+
+.lwip-feature-modal-info {
+  font-size: 14px;
+  display: grid;
+  gap: 5px;
+}
+
+.lwip-feature-modal-info a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.lwip-feature-modal-info a:hover {
+  text-decoration: underline;
+}
+
+#lwip-rename-widget-save-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #999;
+}
+
+.lwip-premium-popup-header {
+  font-size: 16px;
+  font-weight: 700;
+  gap: 4px;
+  line-height: normal;
+  margin: 0 0 10px;
+}
+
+.lwip-premium-popup-btn {
+  background-color: #0ec12f;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 8px;
+  height: 32px;
+  width: 128px;
+}
+
+.lwip-premium-footer-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.lwip-premium-footer-btn span:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.lwip-font-bold {
+  font-weight: 700;
+}
+
+.lwip-lwip-premium-footer-btn:hover {
+  color: #27c4cf;
+}
+
+.lwip-mt-8 {
+  margin-top: 8px;
+  display: grid;
+  gap: 5px;
+}
+
+/* Style for the dropdown options with images */
+.lwip-option-with-image {
+  display: flex;
+  align-items: center;
+}
+
+.lwip-option-with-image img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.lwip-option-with-image p {
+  margin: 0;
+}
+
+/* Style for the Select2 container for custom drop down */
+.select2-container--default .select2-selection--single {
+  height: 30px !important;
+  display: flex !important;
+  justify-content: left !important;
+  align-items: center !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  display: flex;
+  align-items: center;
+}
+
+/* Custom css  */
+
+.lwip-custom-css-heading{
+  color: #1d2327;
+  font-size: 1.3em;
+  margin: 6px 0;
+  padding: 0 12px;
+  font-size: 14px;
+  border-bottom: 1px solid black'
+}
+
+.lwip-custom-css-heading-border{
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Common container styles */
+.lwip-custom-container {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 97%;
+  margin: 17px 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.lwip-custom-container h3 {
+  margin-bottom: 10px;
+}
+
+.lwip-custom-input-container {
+  background-color: #ffffff;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.88);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.lwip-custom-container .lwip-custom-input-container:first-of-type {
+  border-top: none;
+}
+
+.lwip-custom-input-container input[type="color"],
+.lwip-custom-input-container input[type="number"] {
+  margin-left: auto;
+}
+
+.lwip-custom-input-container input[type="number"] {
+  width: 88px;
+}
+
+/* Switch styles for dark mode */
+.lwip-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-left: auto;
+  vertical-align: middle;
+}
+
+.lwip-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.lwip-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.lwip-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.lwip-slider-text {
+  position: absolute;
+  line-height: 24px; 
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.lwip-on {
+  left: 5px;
+  opacity: 0;
+}
+
+.lwip-off {
+  right: 5px;
+  opacity: 1;
+}
+
+input:checked + .lwip-slider {
+  background-color: #4dd0e1;
+}
+
+input:checked + .lwip-slider:before {
+  transform: translateX(26px);
+}
+
+input:checked + .lwip-slider .lwip-on {
+  opacity: 1;
+}
+
+input:checked + .lwip-slider .lwip-off {
+  opacity: 0;
+}
+
+.lwip-custom-color{
+  height: 32px;
+  width: 32px;
+}
+
+.lwip-custom-message-svg{
+  margin: 5px 0px 0px 8px;
+}
+
+/* styles for source module filter option  */
+
+.lwip-filter-label {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 96%;
+}
+
+.lwip-filter-text {
+  margin-left: 5px;
+  color: white;
+  text-align: justify;
+  margin: 7px;
+  margin-left: 4px;
+}
+
+.lwip-filter-input-type {
+  border: 1px solid #ccc;
+  border-radius: 6px !important;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  outline: none;
+}
+
+.lwip-filter-label button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.lwip-white-label-filter {
+  max-height: 150px;
+  overflow-y: auto;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.lwip-full-width {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.lwip-full-width-filter-home {
+  width: 80%;
+  margin-bottom: 11px;
+}
+
+.lwip-ant-btn-filter {
+  width: 100%;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  background-color: #27c4cf;
+  font-size: 16px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.add-lwip-ant-btn-filter {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  background-color: #27c4cf;
+  font-size: 16px;
+  height: 32px;
+  border-radius: 5px;
+}
+
+.lwip-ant-btn-filter:hover {
+  background-color: #69d1d8;
+}
+
+span.anticon.anticon-plus {
+  align-items: center !important;
+  margin-top: 7px;
+}
+
+.add-lwip-ant-btn-filter:hover {
+  background-color: #69d1d8;
+}
+
+.filter-svg-lwip {
+  margin-top: 5px;
+  padding-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.lwip-filter-span-text {
+  letter-spacing: 1px;
+}
+
+.lwip-filter-text-white-color {
+  color: #fff;
+  font-size: 14px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.col-gap-6 {
+  column-gap: 6px;
+}
+
+.lwip-filter-number-inc {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 92%;
+  height: 60px;
+  padding: 0 10px;
+  margin-top: 27px;
+}
+
+.lwip-filter-text-white-color {
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 255, 0.3);
+  margin-right: 10px;
+}
+
+.lwip-input-container {
+  width: 40%;
+}
+
+#lwip-filter-total-number-posts {
+  width: 75%;
+  border: 1px solid #ddd;
+  margin-left: 20px;
+}
+
+.lwip-input-container input[type=number]:focus{
+  border: 0.5px solid #27c4cf;
+}
+
+/* Filter error message */
+.lwip-show-msg {
+  color: #ff4d4f;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  display: block;
+}

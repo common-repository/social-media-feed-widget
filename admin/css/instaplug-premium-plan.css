@@ -1,0 +1,1259 @@
+:where(.css-1ym4yry)[class^="lwip-ant-btn"],
+:where(.css-1ym4yry)[class*=" lwip-ant-btn"] {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+:where(.css-1ym4yry)[class^="lwip-ant-btn"]::before,
+:where(.css-1ym4yry)[class*=" lwip-ant-btn"]::before,
+:where(.css-1ym4yry)[class^="lwip-ant-btn"]::after,
+:where(.css-1ym4yry)[class*=" lwip-ant-btn"]::after {
+  box-sizing: border-box;
+}
+
+:where(.css-1ym4yry)[class^="lwip-ant-btn"] [class^="lwip-ant-btn"],
+:where(.css-1ym4yry)[class*=" lwip-ant-btn"] [class^="lwip-ant-btn"],
+:where(.css-1ym4yry)[class^="lwip-ant-btn"] [class*=" lwip-ant-btn"],
+:where(.css-1ym4yry)[class*=" lwip-ant-btn"] [class*=" lwip-ant-btn"] {
+  box-sizing: border-box;
+}
+
+:where(.css-1ym4yry)[class^="lwip-ant-btn"] [class^="lwip-ant-btn"]::before,
+:where(.css-1ym4yry)[class*=" lwip-ant-btn"] [class^="lwip-ant-btn"]::before,
+:where(.css-1ym4yry)[class^="lwip-ant-btn"] [class*=" lwip-ant-btn"]::before,
+:where(.css-1ym4yry)[class*=" lwip-ant-btn"] [class*=" lwip-ant-btn"]::before,
+:where(.css-1ym4yry)[class^="lwip-ant-btn"] [class^="lwip-ant-btn"]::after,
+:where(.css-1ym4yry)[class*=" lwip-ant-btn"] [class^="lwip-ant-btn"]::after,
+:where(.css-1ym4yry)[class^="lwip-ant-btn"] [class*=" lwip-ant-btn"]::after,
+:where(.css-1ym4yry)[class*=" lwip-ant-btn"] [class*=" lwip-ant-btn"]::after {
+  box-sizing: border-box;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn {
+  outline: none;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  touch-action: manipulation;
+  line-height: 1.5714285714285714;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn>span {
+  display: inline-block;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn>.anticon+span,
+:where(.css-1ym4yry).lwip-ant-btn>span+.anticon {
+  margin-inline-start: 8px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn>a {
+  color: currentColor;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn:not(:disabled):focus-visible {
+  outline: 2px solid #a4f5f2;
+  outline-offset: 1px;
+  transition: outline-offset 0s, outline 0s;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-icon-only.lwip-ant-btn-compact-item {
+  flex: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-item.lwip-ant-btn-primary:not([disabled])+.lwip-ant-btn-compact-item.lwip-ant-btn-primary:not([disabled]) {
+  position: relative;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-item.lwip-ant-btn-primary:not([disabled])+.lwip-ant-btn-compact-item.lwip-ant-btn-primary:not([disabled]):before {
+  position: absolute;
+  top: -1px;
+  inset-inline-start: -1px;
+  display: inline-block;
+  width: 1px;
+  height: calc(100% + 2px);
+  background-color: #4dd7db;
+  content: "";
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item.lwip-ant-btn-primary:not([disabled])+.lwip-ant-btn-compact-vertical-item.lwip-ant-btn-primary:not([disabled]) {
+  position: relative;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item.lwip-ant-btn-primary:not([disabled])+.lwip-ant-btn-compact-vertical-item.lwip-ant-btn-primary:not([disabled]):before {
+  position: absolute;
+  top: -1px;
+  inset-inline-start: -1px;
+  display: inline-block;
+  width: calc(100% + 2px);
+  height: 1px;
+  background-color: #4dd7db;
+  content: "";
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-sm {
+  font-size: 14px;
+  height: 24px;
+  padding: 0px 7px;
+  border-radius: 4px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-sm.lwip-ant-btn-icon-only {
+  width: 24px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-sm.lwip-ant-btn-icon-only.lwip-ant-btn-round {
+  width: auto;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-sm.lwip-ant-btn-icon-only>span {
+  transform: scale(1.143);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-sm.lwip-ant-btn-loading {
+  opacity: 0.65;
+  cursor: default;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-sm .lwip-ant-btn-loading-icon {
+  transition: width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-sm:not(.lwip-ant-btn-icon-only) .lwip-ant-btn-loading-icon>.anticon {
+  margin-inline-end: 8px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-circle.lwip-ant-btn-sm {
+  min-width: 24px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  border-radius: 50%;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-round.lwip-ant-btn-sm {
+  border-radius: 24px;
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn {
+  font-size: 14px;
+  height: 32px;
+  padding: 4px 15px;
+  border-radius: 1px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-icon-only {
+  width: 32px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-icon-only.lwip-ant-btn-round {
+  width: auto;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-icon-only>span {
+  transform: scale(1.143);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-loading {
+  opacity: 0.65;
+  cursor: default;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn .lwip-ant-btn-loading-icon {
+  transition: width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn:not(.lwip-ant-btn-icon-only) .lwip-ant-btn-loading-icon>.anticon {
+  margin-inline-end: 8px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-circle {
+  min-width: 32px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  border-radius: 50%;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-round {
+  border-radius: 32px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-lg {
+  font-size: 16px;
+  height: 40px;
+  padding: 6.428571428571429px 15px;
+  border-radius: 8px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-lg.lwip-ant-btn-icon-only {
+  width: 40px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-lg.lwip-ant-btn-icon-only.lwip-ant-btn-round {
+  width: auto;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-lg.lwip-ant-btn-icon-only>span {
+  transform: scale(1.143);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-lg.lwip-ant-btn-loading {
+  opacity: 0.65;
+  cursor: default;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-lg .lwip-ant-btn-loading-icon {
+  transition: width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-lg:not(.lwip-ant-btn-icon-only) .lwip-ant-btn-loading-icon>.anticon {
+  margin-inline-end: 8px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-circle.lwip-ant-btn-lg {
+  min-width: 40px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  border-radius: 50%;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-round.lwip-ant-btn-lg {
+  border-radius: 40px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn.lwip-ant-btn-block {
+  width: 100%;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default {
+  border-color: #d9d9d9;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default:disabled {
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default:not(:disabled):hover {
+  color: #4dd7db;
+  border-color: #4dd7db;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default:not(:disabled):active {
+  color: #189aa8;
+  border-color: #189aa8;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-background-ghost {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-background-ghost:not( :disabled):hover {
+  background-color: transparent;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-background-ghost:not( :disabled):active {
+  background-color: transparent;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-background-ghost:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-dangerous {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-dangerous:not( :disabled):hover {
+  color: #ff7875;
+  border-color: #ffa39e;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-dangerous:not( :disabled):active {
+  color: #d9363e;
+  border-color: #d9363e;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost {
+  color: #ff4d4f;
+  background-color: transparent;
+  border-color: #ff4d4f;
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost:not( :disabled):hover {
+  background-color: transparent;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost:not( :disabled):active {
+  background-color: transparent;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-default.lwip-ant-btn-dangerous:disabled {
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary {
+  color: #fff;
+  background-color: #27c4cf;
+  box-shadow: 0 2px 0 rgba(5, 255, 222, 0.06);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary:disabled {
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary:not(:disabled):hover {
+  color: #fff;
+  background-color: #4dd7db;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary:not(:disabled):active {
+  color: #fff;
+  background-color: #189aa8;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-background-ghost {
+  color: #27c4cf;
+  background-color: transparent;
+  border-color: #27c4cf;
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-background-ghost:not( :disabled):hover {
+  background-color: transparent;
+  color: #4dd7db;
+  border-color: #4dd7db;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-background-ghost:not( :disabled):active {
+  background-color: transparent;
+  color: #189aa8;
+  border-color: #189aa8;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-background-ghost:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-dangerous {
+  background-color: #ff4d4f;
+  box-shadow: 0 2px 0 rgba(255, 38, 5, 0.06);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-dangerous:not( :disabled):hover {
+  background-color: #ff7875;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-dangerous:not( :disabled):active {
+  background-color: #d9363e;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost {
+  color: #ff4d4f;
+  background-color: transparent;
+  border-color: #ff4d4f;
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost:not( :disabled):hover {
+  background-color: transparent;
+  color: #ff7875;
+  border-color: #ff7875;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost:not( :disabled):active {
+  background-color: transparent;
+  color: #d9363e;
+  border-color: #d9363e;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-primary.lwip-ant-btn-dangerous:disabled {
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+  border-style: dashed;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed:disabled {
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed:not(:disabled):hover {
+  color: #4dd7db;
+  border-color: #4dd7db;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed:not(:disabled):active {
+  color: #189aa8;
+  border-color: #189aa8;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-background-ghost {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-background-ghost:not( :disabled):hover {
+  background-color: transparent;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-background-ghost:not( :disabled):active {
+  background-color: transparent;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-background-ghost:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-dangerous {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-dangerous:not( :disabled):hover {
+  color: #ff7875;
+  border-color: #ffa39e;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-dangerous:not( :disabled):active {
+  color: #d9363e;
+  border-color: #d9363e;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost {
+  color: #ff4d4f;
+  background-color: transparent;
+  border-color: #ff4d4f;
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost:not( :disabled):hover {
+  background-color: transparent;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost:not( :disabled):active {
+  background-color: transparent;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-dangerous.lwip-ant-btn-background-ghost:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-dashed.lwip-ant-btn-dangerous:disabled {
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-link {
+  color: #000000;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-link:not(:disabled):hover {
+  color: #27c4cf;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-link:not(:disabled):active {
+  color: #27c4cf;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-link:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-link.lwip-ant-btn-dangerous {
+  color: #ff4d4f;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-link.lwip-ant-btn-dangerous:not(:disabled):hover {
+  color: #ff7875;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-link.lwip-ant-btn-dangerous:not( :disabled):active {
+  color: #d9363e;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-link.lwip-ant-btn-dangerous:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-text:not(:disabled):hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-text:not(:disabled):active {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-text:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-text.lwip-ant-btn-dangerous {
+  color: #ff4d4f;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-text.lwip-ant-btn-dangerous:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-text.lwip-ant-btn-dangerous:not(:disabled):hover {
+  color: #ff7875;
+  background-color: #fff2f0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-text.lwip-ant-btn-dangerous:not( :disabled):active {
+  color: #ff7875;
+  background-color: #fff2f0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-disabled {
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-disabled.lwip-ant-btn:hover {
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group {
+  position: relative;
+  display: inline-flex;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:last-child),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn:not(:last-child),
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:last-child)>.lwip-ant-btn,
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn:not(:last-child)>.lwip-ant-btn {
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:first-child),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn:not(:first-child) {
+  margin-inline-start: -1px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:first-child),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn:not(:first-child),
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:first-child)>.lwip-ant-btn,
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn:not(:first-child)>.lwip-ant-btn {
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group .lwip-ant-btn {
+  position: relative;
+  z-index: 1;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group .lwip-ant-btn:hover,
+:where(.css-1ym4yry).lwip-ant-btn-group .lwip-ant-btn:focus,
+:where(.css-1ym4yry).lwip-ant-btn-group .lwip-ant-btn:active {
+  z-index: 2;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group .lwip-ant-btn[disabled] {
+  z-index: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group .lwip-ant-btn-icon-only {
+  font-size: 14px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:last-child):not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn-primary:not(:last-child):not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:last-child)>.lwip-ant-btn-primary:not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn-primary:not(:last-child)>.lwip-ant-btn-primary:not(:disabled) {
+  border-inline-end-color: #4dd7db;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:first-child):not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn-primary:not(:first-child):not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:first-child)>.lwip-ant-btn-primary:not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn-primary:not(:first-child)>.lwip-ant-btn-primary:not(:disabled) {
+  border-inline-start-color: #4dd7db;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:last-child):not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn-danger:not(:last-child):not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:last-child)>.lwip-ant-btn-danger:not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn-danger:not(:last-child)>.lwip-ant-btn-danger:not(:disabled) {
+  border-inline-end-color: #ff7875;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:first-child):not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn-danger:not(:first-child):not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>span:not(:first-child)>.lwip-ant-btn-danger:not(:disabled),
+:where(.css-1ym4yry).lwip-ant-btn-group>.lwip-ant-btn-danger:not(:first-child)>.lwip-ant-btn-danger:not(:disabled) {
+  border-inline-start-color: #ff7875;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-item:not(.lwip-ant-btn-compact-last-item) {
+  margin-inline-end: -1px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-item:hover,
+:where(.css-1ym4yry).lwip-ant-btn-compact-item:active {
+  z-index: 2;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-item[disabled] {
+  z-index: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-item:not(.lwip-ant-btn-compact-first-item):not(.lwip-ant-btn-compact-last-item) {
+  border-radius: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-item:not(.lwip-ant-btn-compact-last-item).lwip-ant-btn-compact-first-item,
+:where(.css-1ym4yry).lwip-ant-btn-compact-item:not(.lwip-ant-btn-compact-last-item).lwip-ant-btn-compact-first-item.lwip-ant-btn-sm,
+:where(.css-1ym4yry).lwip-ant-btn-compact-item:not(.lwip-ant-btn-compact-last-item).lwip-ant-btn-compact-first-item.lwip-ant-btn-lg {
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-item:not(.lwip-ant-btn-compact-first-item).lwip-ant-btn-compact-last-item,
+:where(.css-1ym4yry).lwip-ant-btn-compact-item:not(.lwip-ant-btn-compact-first-item).lwip-ant-btn-compact-last-item.lwip-ant-btn-sm,
+:where(.css-1ym4yry).lwip-ant-btn-compact-item:not(.lwip-ant-btn-compact-first-item).lwip-ant-btn-compact-last-item.lwip-ant-btn-lg {
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item:not(.lwip-ant-btn-compact-vertical-last-item) {
+  margin-bottom: -1px;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item:hover,
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item:focus,
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item:active {
+  z-index: 2;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item[disabled] {
+  z-index: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item:not(.lwip-ant-btn-compact-vertical-first-item):not(.lwip-ant-btn-compact-vertical-last-item) {
+  border-radius: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item.lwip-ant-btn-compact-vertical-first-item:not(.lwip-ant-btn-compact-vertical-last-item),
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item.lwip-ant-btn-compact-vertical-first-item:not(.lwip-ant-btn-compact-vertical-last-item).lwip-ant-btn-sm,
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item.lwip-ant-btn-compact-vertical-first-item:not(.lwip-ant-btn-compact-vertical-last-item).lwip-ant-btn-lg {
+  border-end-end-radius: 0;
+  border-end-start-radius: 0;
+}
+
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item.lwip-ant-btn-compact-vertical-last-item:not(.lwip-ant-btn-compact-vertical-first-item),
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item.lwip-ant-btn-compact-vertical-last-item:not(.lwip-ant-btn-compact-vertical-first-item).lwip-ant-btn-sm,
+:where(.css-1ym4yry).lwip-ant-btn-compact-vertical-item.lwip-ant-btn-compact-vertical-last-item:not(.lwip-ant-btn-compact-vertical-first-item).lwip-ant-btn-lg {
+  border-start-start-radius: 0;
+  border-start-end-radius: 0;
+}
+
+:where(.css-1ym4yry)[class^="ant-layout"],
+:where(.css-1ym4yry)[class*=" ant-layout"] {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+:where(.css-1ym4yry)[class^="ant-layout"]::before,
+:where(.css-1ym4yry)[class*=" ant-layout"]::before,
+:where(.css-1ym4yry)[class^="ant-layout"]::after,
+:where(.css-1ym4yry)[class*=" ant-layout"]::after {
+  box-sizing: border-box;
+}
+
+:where(.css-1ym4yry)[class^="ant-layout"] [class^="ant-layout"],
+:where(.css-1ym4yry)[class*=" ant-layout"] [class^="ant-layout"],
+:where(.css-1ym4yry)[class^="ant-layout"] [class*=" ant-layout"],
+:where(.css-1ym4yry)[class*=" ant-layout"] [class*=" ant-layout"] {
+  box-sizing: border-box;
+}
+
+:where(.css-1ym4yry)[class^="ant-layout"] [class^="ant-layout"]::before,
+:where(.css-1ym4yry)[class*=" ant-layout"] [class^="ant-layout"]::before,
+:where(.css-1ym4yry)[class^="ant-layout"] [class*=" ant-layout"]::before,
+:where(.css-1ym4yry)[class*=" ant-layout"] [class*=" ant-layout"]::before,
+:where(.css-1ym4yry)[class^="ant-layout"] [class^="ant-layout"]::after,
+:where(.css-1ym4yry)[class*=" ant-layout"] [class^="ant-layout"]::after,
+:where(.css-1ym4yry)[class^="ant-layout"] [class*=" ant-layout"]::after,
+:where(.css-1ym4yry)[class*=" ant-layout"] [class*=" ant-layout"]::after {
+  box-sizing: border-box;
+}
+
+:where(.css-1ym4yry).ant-layout {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  min-height: 0;
+  background: #f5f5f5;
+}
+
+:where(.css-1ym4yry).ant-layout,
+:where(.css-1ym4yry).ant-layout * {
+  box-sizing: border-box;
+}
+
+a.buyNowUrl {
+    text-decoration: none;
+    border: none;
+}
+
+:where(.css-1ym4yry).ant-layout.ant-layout-has-sider {
+  flex-direction: row;
+}
+
+:where(.css-1ym4yry).ant-layout.ant-layout-has-sider>.ant-layout,
+:where(.css-1ym4yry).ant-layout.ant-layout-has-sider>.ant-layout-content {
+  width: 0;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-header,
+:where(.css-1ym4yry).ant-layout.ant-layout-footer {
+  flex: 0 0 auto;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-header {
+  height: 64px;
+  padding-inline: 50px;
+  color: rgba(0, 0, 0, 0.88);
+  line-height: 64px;
+  background: #001529;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-header .ant-menu {
+  line-height: inherit;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-footer {
+  padding: 24px 50px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  background: #f5f5f5;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-content {
+  flex: auto;
+  min-height: 0;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider {
+  position: relative;
+  min-width: 0;
+  background: #001529;
+  transition: all 0.2s;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-children {
+  height: 100%;
+  margin-top: -0.1px;
+  padding-top: 0.1px;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-children .ant-menu.ant-menu-inline-collapsed {
+  width: auto;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-has-trigger {
+  padding-bottom: 48px;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-right {
+  order: 1;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-trigger {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  height: 48px;
+  color: #fff;
+  line-height: 48px;
+  text-align: center;
+  background: #002140;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-zero-width>* {
+  overflow: hidden;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-zero-width-trigger {
+  position: absolute;
+  top: 64px;
+  inset-inline-end: -40px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #001529;
+  border-start-start-radius: 0;
+  border-start-end-radius: 6px;
+  border-end-end-radius: 6px;
+  border-end-start-radius: 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-zero-width-trigger::after {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  transition: all 0.3s;
+  content: "";
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-zero-width-trigger:hover::after {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-zero-width-trigger-right {
+  inset-inline-start: -40px;
+  border-start-start-radius: 6px;
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+  border-end-start-radius: 6px;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-light {
+  background: #ffffff;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-light .ant-layout-sider-trigger {
+  color: rgba(0, 0, 0, 0.88);
+  background: #ffffff;
+}
+
+:where(.css-1ym4yry).ant-layout .ant-layout-sider-light .ant-layout-sider-zero-width-trigger {
+  color: rgba(0, 0, 0, 0.88);
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  border-inline-start: 0;
+}
+
+:where(.css-1ym4yry).ant-layout-rtl {
+  direction: rtl;
+}
+
+.action-subtitle {
+  font-size: 16px;
+  font-weight: "bold";
+  margin: 16px 0;
+}
+
+.action-preview-screen {
+  height: auto;
+}
+
+.pricing-table-container {
+  margin: auto;
+  max-width: 1220px;
+  padding: 0 16px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-description {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  padding: 8px 10px;
+  text-transform: none;
+}
+
+.highlight-text {
+  color: #27c4cf;
+}
+
+.pricing-table-container .pricing-heading {
+  width: 300px;
+
+}
+
+.pricing-table-container .bill-amount {
+  color: #27c4cf;
+}
+
+.pricing-table-container .feature-not-available {
+  color: red;
+}
+
+.pricing-table-container .pricing-table-wrapper {
+  height: 100%;
+  width: 80%;
+}
+
+.pricing-table-container .pricing-table-wrapper .buy-button {
+  border-radius: 4px;
+}
+
+.pricing-table-container .pricing-table-wrapper .buy-button.lwip-ant-btn-primary:disabled {
+  color: #423668;
+  font-weight: 700;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive {
+  float: left;
+  overflow: auto;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-optional-service {
+  background: #e8f7fb;
+  float: left;
+  overflow: auto;
+  width: 100%;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table {
+  background: #e8f7fb;
+  border-collapse: collapse;
+  margin: 0 auto;
+  overflow: auto;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table tbody tr td:first-child,
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table thead tr th:first-child {
+  width: 300px;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table thead tr .headding:first-child {
+  padding-left: 10px;
+  padding-top: 12px;
+  text-align: left;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table thead tr .headding:first-child.empty-th-1 {
+  padding: 0 12px 0 10px;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table thead tr .headding {
+  font-size: 24px;
+  font-weight: 800;
+  padding: 16px 12px;
+  position: relative;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table thead tr th {
+  text-transform: capitalize;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table tbody tr td:first-child,
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table thead tr th:first-child {
+  background: #e8f7fb;
+  text-align: left;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table tbody tr td:first-child.bg-white-smoke,
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table thead tr th:first-child.bg-white-smoke {
+  background-color: #f5f5f5;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive .starting-at {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive .text {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  padding: 8px 10px;
+  text-transform: none;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table tbody tr td:nth-child(2n),
+.pricing-table-container .pricing-table-wrapper th:nth-child(2n) {
+  background: #fff;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table thead tr .price {
+  color: #423668;
+  font-size: 28px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table thead tr .price span {
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: lowercase;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive .colum-lable {
+  background: #06aaf1;
+  color: #fff;
+  font-size: 12px;
+  left: 0;
+  letter-spacing: 4px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: -24px;
+  width: 100%;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive .hoverlink {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 0;
+  position: relative;
+  text-decoration: underline;
+}
+
+.pricing-table-container .pricing-table-wrapper #popmake-26709 .frm_style_om-free-trial-popup .frm_button_submit {
+  width: auto;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive .cheked-point {
+  background-repeat: no-repeat;
+  display: block;
+  height: 20px;
+  margin: 0 auto;
+  position: relative;
+  width: 20px;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table tbody tr td {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 4px;
+  vertical-align: middle;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-block {
+  float: left;
+  width: 100%;
+}
+
+.pricing-table-container .pricing-table-wrapper .two-ul-grid {
+  display: flex;
+  float: left;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pricing-table-container .pricing-table-wrapper .first-ul {
+  flex: 0 0 48%;
+  width: 48%;
+}
+
+.pricing-table-container .pricing-table-wrapper .first-ul h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table tbody tr {
+  border-bottom: 1px solid #d3edf7;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table .buy-button-td {
+  padding: 16px;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table .col-1-child-1 {
+  padding-left: 16px;
+  padding-top: 0;
+}
+
+.pricing-table-container .pricing-table-wrapper .ip-table-responsive table .dynamic-key-td {
+  padding: 10px;
+}
+
+.ipl-progress-indicator.available {
+  opacity: 0;
+}
+
+.ipl-progress-indicator {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 1;
+  pointer-events: none;
+  -webkit-transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 436ms;
+  -moz-transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 436ms;
+  transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 436ms;
+  z-index: 9999;
+}
+
+.insp-logo-frame {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-animation: fadein 436ms;
+  -moz-animation: fadein 436ms;
+  animation: fadein 436ms;
+  height: 98%;
+}
+
+.insp-logo-frame-img {
+  width: 112px;
+  height: 112px;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.ipl-progress-indicator-head {
+  background-color: #c6dafc;
+  height: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ipl-progress-indicator .first-indicator,
+.ipl-progress-indicator .second-indicator {
+  background-color: #27c4cf;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.ipl-progress-indicator .first-indicator {
+  -webkit-animation: first-indicator 2s linear infinite;
+  -moz-animation: first-indicator 2s linear infinite;
+  animation: first-indicator 2s linear infinite;
+}
+
+.ipl-progress-indicator .second-indicator {
+  -webkit-animation: second-indicator 2s linear infinite;
+  -moz-animation: second-indicator 2s linear infinite;
+  animation: second-indicator 2s linear infinite;
+}
+
+.ipl-progress-indicator .insp-logo {
+  animation: App-logo-spin infinite 20s linear;
+  border-radius: 50%;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  align-self: center;
+}

@@ -1,0 +1,1338 @@
+# Copyright (C) 2024 Social Media Feed Widget
+# This file is distributed under the same license as the Social Media Feed Widget package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Social Media Feed Widget 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/social-media-feed-widget\n"
+"POT-Creation-Date: 2024-10-03 07:03:17+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/class-lwip-instaplug-ajax-functions.php:63
+#: includes/class-lwip-instaplug-ajax-functions.php:141
+#: includes/class-lwip-instaplug-ajax-functions.php:201
+#: includes/class-lwip-instaplug-ajax-functions.php:257
+#: includes/class-lwip-instaplug-ajax-functions.php:291
+#: includes/class-lwip-instaplug-ajax-functions.php:325
+#: includes/class-lwip-instaplug-ajax-functions.php:359
+#: includes/class-lwip-instaplug-ajax-functions.php:395
+#: includes/class-lwip-instaplug-ajax-functions.php:485
+#: includes/class-lwip-instaplug-ajax-functions.php:520
+msgid "Invalid nonce."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:125
+msgid "Data stored successfully."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:127
+msgid "Failed to store data."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:187
+msgid "Data updated successfully."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:189
+msgid "Failed to update data."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:239
+msgid "Shortcode created successfully."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:241
+msgid "Something went wrong"
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:244
+#: includes/class-lwip-instaplug-ajax-functions.php:382
+#: includes/class-lwip-instaplug-ajax-functions.php:546
+msgid "Not getting data"
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:275
+msgid "Widget delete successfully."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:277
+msgid "Error deleting widget."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:280
+msgid "Invalid widget ID."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:309
+msgid "Logged out successfully."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:311
+msgid "Logged out failed."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:314
+msgid "No email available"
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:342
+msgid "Account disconnected successfully."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:344
+msgid "Failed"
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:347
+msgid "No widget available"
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:377
+msgid "Account type store successfully."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:379
+msgid "Account type store failed."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:403
+msgid "Invalid request."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:414
+msgid "User not found."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:451
+#: includes/class-lwip-instaplug-ajax-functions.php:466
+msgid "Shortcode generated successfully."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:453
+msgid "Failed to update shortcode."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:468
+msgid "Failed to save shortcode."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:472
+#: includes/class-lwip-instaplug-ajax-functions.php:508
+msgid "Invalid data received."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:503
+msgid "User Logged In Successfully."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:505
+msgid "User is not logged in."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:541
+msgid "Widget store successfully."
+msgstr ""
+
+#: includes/class-lwip-instaplug-ajax-functions.php:543
+msgid "failed"
+msgstr ""
+
+#: includes/class-lwip-instaplug-load.php:82
+#: includes/class-lwip-instaplug-load.php:83
+msgid "All Feeds"
+msgstr ""
+
+#: includes/class-lwip-instaplug-load.php:91
+#: includes/class-lwip-instaplug-load.php:92
+msgid "Premium"
+msgstr ""
+
+#: includes/class-lwip-instaplug-load.php:101
+#: includes/class-lwip-instaplug-load.php:102
+#: template/instaplug-widget.php:1008
+msgid "Settings"
+msgstr ""
+
+#: includes/class-lwip-instaplug-load.php:111
+#: includes/class-lwip-instaplug-load.php:112
+#: template/instaplug-user-profile.php:31
+msgid "Profile"
+msgstr ""
+
+#: includes/class-lwip-instaplug-load.php:220
+msgid "Invalid access. Please access this page through the correct link."
+msgstr ""
+
+#: includes/class-lwip-instaplug-shortcode-handler.php:89
+msgid "Please publish social-feed-widget \"%s\""
+msgstr ""
+
+#: includes/class-lwip-instaplug-shortcode-handler.php:96
+msgid "Social-feed-widget name \"%s\" not found"
+msgstr ""
+
+#: template/instaplug-header.php:44
+msgid "My Profile"
+msgstr ""
+
+#: template/instaplug-header.php:53
+msgid "Logout"
+msgstr ""
+
+#: template/instaplug-header.php:70
+#: template/instaplug-user-authentication.php:16
+#: template/instaplug-user-authentication.php:24
+#: template/instaplug-user-authentication.php:107
+msgid "Login"
+msgstr ""
+
+#: template/instaplug-main-content.php:108
+msgid "Error: Failed to fetch data. Please try again later."
+msgstr ""
+
+#: template/instaplug-main-content.php:128
+msgid "Error: Failed to fetch data."
+msgstr ""
+
+#: template/instaplug-main-content.php:148
+#: template/instaplug-main-content.php:255
+msgid "Please login to retrieve data."
+msgstr ""
+
+#: template/instaplug-main-content.php:181
+msgid "Error: Failed to refresh access token. Please try again later."
+msgstr ""
+
+#: template/instaplug-main-content.php:207
+msgid "Error: Failed to refresh access token"
+msgstr ""
+
+#: template/instaplug-main-content.php:319
+#: template/instaplug-premium-plan.php:269
+msgid "100000"
+msgstr ""
+
+#: template/instaplug-main-content.php:325
+#: template/instaplug-main-content.php:515
+msgid "Generate"
+msgstr ""
+
+#: template/instaplug-main-content.php:331
+msgid "Copy to clipboard"
+msgstr ""
+
+#: template/instaplug-main-content.php:332
+msgid "Copy text"
+msgstr ""
+
+#: template/instaplug-main-content.php:344
+msgid "Un-published "
+msgstr ""
+
+#: template/instaplug-main-content.php:346
+msgid "Published"
+msgstr ""
+
+#: template/instaplug-main-content.php:351
+msgid "Edit"
+msgstr ""
+
+#: template/instaplug-main-content.php:351
+msgid "Delete"
+msgstr ""
+
+#: template/instaplug-main-content.php:418
+msgid "Error: Non-200 response code"
+msgstr ""
+
+#: template/instaplug-main-content.php:423
+msgid "Deleted Successfully."
+msgstr ""
+
+#: template/instaplug-main-content.php:446
+msgid "Dashboard"
+msgstr ""
+
+#: template/instaplug-main-content.php:454
+msgid "View plans"
+msgstr ""
+
+#: template/instaplug-main-content.php:460
+msgid "Upgrade"
+msgstr ""
+
+#: template/instaplug-main-content.php:464
+msgid "Active plan information"
+msgstr ""
+
+#: template/instaplug-main-content.php:465
+#: template/instaplug-premium-plan.php:56
+msgid "Free"
+msgstr ""
+
+#: template/instaplug-main-content.php:466
+#: template/instaplug-premium-plan.php:59
+msgid "Life Time Deal"
+msgstr ""
+
+#: template/instaplug-main-content.php:469
+msgid "Widgets limit"
+msgstr ""
+
+#: template/instaplug-main-content.php:482
+msgid "Create Widget"
+msgstr ""
+
+#: template/instaplug-main-content.php:489
+#: template/instaplug-main-content.php:491
+msgid "Enter widget name"
+msgstr ""
+
+#: template/instaplug-main-content.php:495
+#: template/instaplug-user-profile.php:33
+#: template/instaplug-user-profile.php:65 template/instaplug-widget.php:176
+msgid "Cancel"
+msgstr ""
+
+#: template/instaplug-main-content.php:499
+msgid "Create"
+msgstr ""
+
+#: template/instaplug-main-content.php:506
+msgid "Buy Premium"
+msgstr ""
+
+#: template/instaplug-main-content.php:511
+msgid "Generate Shortcode"
+msgstr ""
+
+#: template/instaplug-main-content.php:514
+msgid "Enter new shortcode"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:20
+msgid "InstaPlug"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:24
+msgid "You need to enable JavaScript to run this app."
+msgstr ""
+
+#: template/instaplug-premium-plan.php:37
+msgid "Pricing Plans"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:47
+msgid "Our pricing plans are designed to be"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:48
+msgid "Affordable"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:49
+msgid "Flexible"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:50
+msgid "and"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:51
+msgid "Tailored"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:52
+msgid "to your unique needs"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:56
+msgid "$0"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:59
+msgid "LIMITED OFFER"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:59
+msgid "$39"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:66
+#: template/instaplug-premium-plan.php:75
+msgid "Active plan"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:72
+#: template/instaplug-premium-plan.php:341
+msgid "Buy now"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:86
+msgid "Features"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:94
+msgid "Account info with follow button"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:109
+msgid "Adjustable feed widget size"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:124
+msgid "Carousel and reel support"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:139
+msgid "Call to action button"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:154
+msgid "Feed hashtag moderate"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:169
+msgid "Feed mentions moderate"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:184
+msgid "Fully responsive all devices"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:198
+msgid "Hover effect"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:211
+msgid "IG business feed"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:224
+msgid "IG personal feed"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:238
+msgid "Multi layout choices"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:253
+msgid "Number of comments and likes"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:267
+msgid "Number of views"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:268
+msgid "5000"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:272
+msgid "Pop up mode"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:286
+msgid "Social share button"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:300
+msgid "Support"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:301
+msgid "Bug fix"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:302
+msgid "Priority"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:305
+msgid "Update time"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:306
+msgid "720minute"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:307
+msgid "60minute"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:310
+msgid "Watermark"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:324
+msgid "Website add limit"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:326
+msgid "Unlimited"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:330
+msgid "Widget creation limit"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:332
+msgid "1"
+msgstr ""
+
+#: template/instaplug-premium-plan.php:333
+msgid "9"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:19
+#: template/instaplug-user-authentication.php:71
+#: template/instaplug-user-authentication.php:136
+#: template/instaplug-user-profile.php:53
+msgid "Email"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:21
+#: template/instaplug-user-authentication.php:74
+msgid "Password"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:23
+msgid "Forgot password?"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:25
+#: template/instaplug-user-authentication.php:79
+msgid "or connect with"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:39
+#: template/instaplug-user-authentication.php:92
+msgid "Sign in with Facebook"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:50
+#: template/instaplug-user-authentication.php:104
+msgid "Sign in with Google"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:53
+msgid "Don't have an account yet?"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:53
+#: template/instaplug-user-authentication.php:63
+msgid "Sign-up"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:65
+msgid "Enter first Name"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:68
+msgid "Enter last Name"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:77
+msgid "Signup"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:107
+msgid "Already have an account?"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:117
+msgid "Email Verification"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:120
+msgid "Email ID:"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:122
+msgid "OTP"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:124
+msgid "Verify"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:126
+msgid "Didn't receive the code?"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:126
+msgid "Resend OTP"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:134
+msgid "Reset my Password"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:139
+msgid "Back to Login"
+msgstr ""
+
+#: template/instaplug-user-authentication.php:140
+msgid "Reset my password"
+msgstr ""
+
+#: template/instaplug-user-profile.php:23
+msgid "Go Back"
+msgstr ""
+
+#: template/instaplug-user-profile.php:34
+#: template/instaplug-user-profile.php:66 template/instaplug-widget.php:179
+msgid "Save"
+msgstr ""
+
+#: template/instaplug-user-profile.php:40
+msgid "First Name"
+msgstr ""
+
+#: template/instaplug-user-profile.php:41
+msgid "Enter First Name"
+msgstr ""
+
+#: template/instaplug-user-profile.php:47
+msgid "Last Name"
+msgstr ""
+
+#: template/instaplug-user-profile.php:48
+msgid "Enter Last Name"
+msgstr ""
+
+#: template/instaplug-user-profile.php:54
+msgid "Enter Email"
+msgstr ""
+
+#: template/instaplug-user-profile.php:63
+msgid "Change Password"
+msgstr ""
+
+#: template/instaplug-user-profile.php:72
+msgid "New Password"
+msgstr ""
+
+#: template/instaplug-user-profile.php:73
+msgid "Enter new password"
+msgstr ""
+
+#: template/instaplug-user-profile.php:81
+msgid "Confirm Password"
+msgstr ""
+
+#: template/instaplug-user-profile.php:82
+msgid "Re-enter password "
+msgstr ""
+
+#: template/instaplug-widget.php:107
+msgid "Upgrade your plan to unlock this feature!"
+msgstr ""
+
+#: template/instaplug-widget.php:112
+msgid "Please contact us for more Information"
+msgstr ""
+
+#: template/instaplug-widget.php:112
+msgid "Support for: Show Post popup when clicking on post"
+msgstr ""
+
+#: template/instaplug-widget.php:118
+msgid "Upgrade plan"
+msgstr ""
+
+#: template/instaplug-widget.php:143
+msgid "Rename widget"
+msgstr ""
+
+#: template/instaplug-widget.php:150
+msgid "Widget name"
+msgstr ""
+
+#: template/instaplug-widget.php:204
+msgid "Publish"
+msgstr ""
+
+#: template/instaplug-widget.php:205
+msgid "View Plans"
+msgstr ""
+
+#: template/instaplug-widget.php:206
+msgid "Close"
+msgstr ""
+
+#: template/instaplug-widget.php:218 template/instaplug-widget.php:249
+msgid "Source"
+msgstr ""
+
+#: template/instaplug-widget.php:226 template/instaplug-widget.php:402
+msgid "Layout"
+msgstr ""
+
+#: template/instaplug-widget.php:234 template/instaplug-widget.php:636
+msgid "Post"
+msgstr ""
+
+#: template/instaplug-widget.php:242
+msgid "Setting"
+msgstr ""
+
+#: template/instaplug-widget.php:250
+msgid "Source type"
+msgstr ""
+
+#: template/instaplug-widget.php:255
+msgid "My Business Account"
+msgstr ""
+
+#: template/instaplug-widget.php:260
+msgid "My Personal Account"
+msgstr ""
+
+#: template/instaplug-widget.php:264
+msgid "Instagram sources"
+msgstr ""
+
+#: template/instaplug-widget.php:267
+msgid "Instagram Disconnect"
+msgstr ""
+
+#: template/instaplug-widget.php:268 template/instaplug-widget.php:285
+msgid "Successfully connected as"
+msgstr ""
+
+#: template/instaplug-widget.php:270 template/instaplug-widget.php:286
+msgid "Disconnect Account"
+msgstr ""
+
+#: template/instaplug-widget.php:273
+msgid "Instagram Connect"
+msgstr ""
+
+#: template/instaplug-widget.php:274
+msgid "Authorize in your Instagram account to display profile."
+msgstr ""
+
+#: template/instaplug-widget.php:277
+msgid "Instagram Account"
+msgstr ""
+
+#: template/instaplug-widget.php:283
+msgid "Facebook Disconnect"
+msgstr ""
+
+#: template/instaplug-widget.php:289
+msgid "Facebook Connect"
+msgstr ""
+
+#: template/instaplug-widget.php:290
+msgid "Authorize in your Facebook account that has access to the Facebook Business page linked to your Instagram business account."
+msgstr ""
+
+#: template/instaplug-widget.php:293
+msgid "Facebook Account"
+msgstr ""
+
+#: template/instaplug-widget.php:304 template/instaplug-widget.php:311
+msgid "Filters"
+msgstr ""
+
+#: template/instaplug-widget.php:312 template/instaplug-widget.php:384
+#: template/instaplug-widget.php:394 template/instaplug-widget.php:469
+#: template/instaplug-widget.php:585 template/instaplug-widget.php:623
+#: template/instaplug-widget.php:709 template/instaplug-widget.php:803
+#: template/instaplug-widget.php:866 template/instaplug-widget.php:887
+#: template/instaplug-widget.php:919
+msgid "Back"
+msgstr ""
+
+#: template/instaplug-widget.php:315
+msgid "Show post containing these words"
+msgstr ""
+
+#: template/instaplug-widget.php:326 template/instaplug-widget.php:348
+msgid "Add Filter"
+msgstr ""
+
+#: template/instaplug-widget.php:337
+msgid "Hide post containing these words"
+msgstr ""
+
+#: template/instaplug-widget.php:364
+msgid "Total number of posts to display"
+msgstr ""
+
+#: template/instaplug-widget.php:373
+msgid "Set the required number to restrict the count of loaded posts. Leave this option empty or 0 to show all available posts."
+msgstr ""
+
+#: template/instaplug-widget.php:382 template/instaplug-widget.php:392
+msgid "Add button"
+msgstr ""
+
+#: template/instaplug-widget.php:383 template/instaplug-widget.php:393
+#: template/instaplug-widget.php:886
+msgid "Done"
+msgstr ""
+
+#: template/instaplug-widget.php:386 template/instaplug-widget.php:396
+msgid "Enter @username of #hashtag"
+msgstr ""
+
+#: template/instaplug-widget.php:413
+msgid "Slider"
+msgstr ""
+
+#: template/instaplug-widget.php:422
+msgid "Grid"
+msgstr ""
+
+#: template/instaplug-widget.php:453
+msgid "Masonry"
+msgstr ""
+
+#: template/instaplug-widget.php:461 template/instaplug-widget.php:468
+msgid "Columns and Rows"
+msgstr ""
+
+#: template/instaplug-widget.php:462
+msgid "Headers"
+msgstr ""
+
+#: template/instaplug-widget.php:463
+msgid "Slider Settings"
+msgstr ""
+
+#: template/instaplug-widget.php:464 template/instaplug-widget.php:622
+msgid "Feed Title"
+msgstr ""
+
+#: template/instaplug-widget.php:474
+msgid "Column mode"
+msgstr ""
+
+#: template/instaplug-widget.php:479
+msgid "Auto"
+msgstr ""
+
+#: template/instaplug-widget.php:480
+msgid "Manual"
+msgstr ""
+
+#: template/instaplug-widget.php:485
+msgid "Column"
+msgstr ""
+
+#: template/instaplug-widget.php:489
+msgid "Row"
+msgstr ""
+
+#: template/instaplug-widget.php:494
+msgid "Gap"
+msgstr ""
+
+#: template/instaplug-widget.php:504 template/instaplug-widget.php:956
+msgid "Width"
+msgstr ""
+
+#: template/instaplug-widget.php:521
+msgid "Header"
+msgstr ""
+
+#: template/instaplug-widget.php:526
+msgid "Show header"
+msgstr ""
+
+#: template/instaplug-widget.php:535
+msgid "Header Elements"
+msgstr ""
+
+#: template/instaplug-widget.php:539
+msgid "Profile Picture"
+msgstr ""
+
+#: template/instaplug-widget.php:544
+msgid "Full Name"
+msgstr ""
+
+#: template/instaplug-widget.php:549
+msgid "Username"
+msgstr ""
+
+#: template/instaplug-widget.php:554
+msgid "Verified Badge"
+msgstr ""
+
+#: template/instaplug-widget.php:559
+msgid "Post Count"
+msgstr ""
+
+#: template/instaplug-widget.php:564
+msgid "Follower Count"
+msgstr ""
+
+#: template/instaplug-widget.php:569
+msgid "Following Count"
+msgstr ""
+
+#: template/instaplug-widget.php:574 template/instaplug-widget.php:823
+msgid "Follow Button"
+msgstr ""
+
+#: template/instaplug-widget.php:584
+msgid "Slider setting"
+msgstr ""
+
+#: template/instaplug-widget.php:589
+msgid "Arrow Control"
+msgstr ""
+
+#: template/instaplug-widget.php:595
+msgid "Drag Control"
+msgstr ""
+
+#: template/instaplug-widget.php:602
+msgid "Animation"
+msgstr ""
+
+#: template/instaplug-widget.php:610
+msgid "Auto Play"
+msgstr ""
+
+#: template/instaplug-widget.php:626
+msgid "Enter Title of Feed"
+msgstr ""
+
+#: template/instaplug-widget.php:628
+msgid ""
+"URLs, hashtags (with #) and Instagram usernames (with @) will be
+\n"
+"                                        automatically displayed as clickable links."
+msgstr ""
+
+#: template/instaplug-widget.php:639 template/instaplug-widget.php:708
+msgid "Post style"
+msgstr ""
+
+#: template/instaplug-widget.php:660
+msgid "Pop up setting"
+msgstr ""
+
+#: template/instaplug-widget.php:670
+msgid "Call to Action Button"
+msgstr ""
+
+#: template/instaplug-widget.php:679
+msgid "Post Click Action"
+msgstr ""
+
+#: template/instaplug-widget.php:682
+msgid "In Popup"
+msgstr ""
+
+#: template/instaplug-widget.php:683
+msgid "In Instagram"
+msgstr ""
+
+#: template/instaplug-widget.php:684
+msgid "None"
+msgstr ""
+
+#: template/instaplug-widget.php:697
+msgid "Post Custom CSS"
+msgstr ""
+
+#: template/instaplug-widget.php:733
+msgid "Hover"
+msgstr ""
+
+#: template/instaplug-widget.php:735
+msgid "Simple"
+msgstr ""
+
+#: template/instaplug-widget.php:742 template/instaplug-widget.php:745
+msgid "Post Element"
+msgstr ""
+
+#: template/instaplug-widget.php:749 template/instaplug-widget.php:813
+msgid "User"
+msgstr ""
+
+#: template/instaplug-widget.php:753 template/instaplug-widget.php:848
+msgid "Date"
+msgstr ""
+
+#: template/instaplug-widget.php:757 template/instaplug-widget.php:828
+msgid "Instagram Link"
+msgstr ""
+
+#: template/instaplug-widget.php:761 template/instaplug-widget.php:838
+msgid "Share"
+msgstr ""
+
+#: template/instaplug-widget.php:772 template/instaplug-widget.php:833
+msgid "Like Count"
+msgstr ""
+
+#: template/instaplug-widget.php:783
+msgid "Comments Count"
+msgstr ""
+
+#: template/instaplug-widget.php:793 template/instaplug-widget.php:843
+msgid "Text"
+msgstr ""
+
+#: template/instaplug-widget.php:802
+msgid "Pop up Settings"
+msgstr ""
+
+#: template/instaplug-widget.php:809
+msgid "Popup Elements"
+msgstr ""
+
+#: template/instaplug-widget.php:818
+msgid "Location"
+msgstr ""
+
+#: template/instaplug-widget.php:853
+msgid "Comments"
+msgstr ""
+
+#: template/instaplug-widget.php:865
+msgid "Action button"
+msgstr ""
+
+#: template/instaplug-widget.php:870
+msgid ""
+"The buttons will be displayed on the popup. You can set a specific call to
+\n"
+"                                                action for each post. Call to action buttons encourage your visitors to
+\n"
+"                                                perform the actions you need (buy a product or contact you)."
+msgstr ""
+
+#: template/instaplug-widget.php:879
+msgid "+ Add Button"
+msgstr ""
+
+#: template/instaplug-widget.php:885
+msgid "Edit button"
+msgstr ""
+
+#: template/instaplug-widget.php:890
+msgid "Instagram Post URL"
+msgstr ""
+
+#: template/instaplug-widget.php:896
+msgid ""
+"Set the Instagram URL of the target post from your feed you need to add the button
+\n"
+"                                            to."
+msgstr ""
+
+#: template/instaplug-widget.php:899
+msgid "Button URL"
+msgstr ""
+
+#: template/instaplug-widget.php:904
+msgid "Set the button redirect link (product page, contact page)"
+msgstr ""
+
+#: template/instaplug-widget.php:906
+msgid "Button Label"
+msgstr ""
+
+#: template/instaplug-widget.php:911
+msgid "Set the compelling button text your visitors won't resist."
+msgstr ""
+
+#: template/instaplug-widget.php:918
+msgid "Custom CSS"
+msgstr ""
+
+#: template/instaplug-widget.php:923
+msgid "Font settings"
+msgstr ""
+
+#: template/instaplug-widget.php:925
+msgid "Family"
+msgstr ""
+
+#: template/instaplug-widget.php:927
+msgid "No Selection"
+msgstr ""
+
+#: template/instaplug-widget.php:928
+msgid "Arial"
+msgstr ""
+
+#: template/instaplug-widget.php:929
+msgid "Caveat"
+msgstr ""
+
+#: template/instaplug-widget.php:930
+msgid "Comfortaa"
+msgstr ""
+
+#: template/instaplug-widget.php:931
+msgid "EB Garamond"
+msgstr ""
+
+#: template/instaplug-widget.php:932
+msgid "Lexend"
+msgstr ""
+
+#: template/instaplug-widget.php:933
+msgid "Lobster"
+msgstr ""
+
+#: template/instaplug-widget.php:934
+msgid "Lora"
+msgstr ""
+
+#: template/instaplug-widget.php:935
+msgid "Merriweather"
+msgstr ""
+
+#: template/instaplug-widget.php:936
+msgid "Montserrat"
+msgstr ""
+
+#: template/instaplug-widget.php:937
+msgid "Nunito"
+msgstr ""
+
+#: template/instaplug-widget.php:938
+msgid "Oswald"
+msgstr ""
+
+#: template/instaplug-widget.php:939
+msgid "Pacifico"
+msgstr ""
+
+#: template/instaplug-widget.php:940
+msgid "Playfair Display"
+msgstr ""
+
+#: template/instaplug-widget.php:941
+msgid "Roboto"
+msgstr ""
+
+#: template/instaplug-widget.php:942
+msgid "Roboto Mono"
+msgstr ""
+
+#: template/instaplug-widget.php:943
+msgid "Roboto Serif"
+msgstr ""
+
+#: template/instaplug-widget.php:944
+msgid "Spectral"
+msgstr ""
+
+#: template/instaplug-widget.php:948 template/instaplug-widget.php:966
+msgid "Color"
+msgstr ""
+
+#: template/instaplug-widget.php:954
+msgid "Border settings"
+msgstr ""
+
+#: template/instaplug-widget.php:972
+msgid "Other settings"
+msgstr ""
+
+#: template/instaplug-widget.php:974
+msgid "Padding"
+msgstr ""
+
+#: template/instaplug-widget.php:983
+msgid "Margin"
+msgstr ""
+
+#: template/instaplug-widget.php:993
+msgid "Dark Mode"
+msgstr ""
+
+#: template/instaplug-widget.php:997
+msgid "on"
+msgstr ""
+
+#: template/instaplug-widget.php:998
+msgid "off"
+msgstr ""
+
+#: template/instaplug-widget.php:1010
+msgid "Select Language"
+msgstr ""
+
+#: template/instaplug-widget.php:1012
+msgid "Language"
+msgstr ""
+
+#: template/instaplug-widget.php:1014
+msgid "English"
+msgstr ""
+
+#: template/instaplug-widget.php:1015
+msgid "Azərbaycan"
+msgstr ""
+
+#: template/instaplug-widget.php:1016
+msgid "Čeština"
+msgstr ""
+
+#: template/instaplug-widget.php:1017
+msgid "Dansk"
+msgstr ""
+
+#: template/instaplug-widget.php:1018
+msgid "Deutsch"
+msgstr ""
+
+#: template/instaplug-widget.php:1019
+msgid "Ελληνικά"
+msgstr ""
+
+#: template/instaplug-widget.php:1020
+msgid "Español"
+msgstr ""
+
+#: template/instaplug-widget.php:1021
+msgid "فارسی"
+msgstr ""
+
+#: template/instaplug-widget.php:1022
+msgid "Suomi"
+msgstr ""
+
+#: template/instaplug-widget.php:1023
+msgid "Français"
+msgstr ""
+
+#: template/instaplug-widget.php:1024
+msgid "עברית"
+msgstr ""
+
+#: template/instaplug-widget.php:1025
+msgid "हिन्दी"
+msgstr ""
+
+#: template/instaplug-widget.php:1026
+msgid "Hrvatski"
+msgstr ""
+
+#: template/instaplug-widget.php:1027
+msgid "Magyar"
+msgstr ""
+
+#: template/instaplug-widget.php:1028
+msgid "Italiano"
+msgstr ""
+
+#: template/instaplug-widget.php:1029
+msgid "日本語"
+msgstr ""
+
+#: template/instaplug-widget.php:1030
+msgid "한국어"
+msgstr ""
+
+#: template/instaplug-widget.php:1031
+msgid "Lietuvių"
+msgstr ""
+
+#: template/instaplug-widget.php:1032
+msgid "Nederlands"
+msgstr ""
+
+#: template/instaplug-widget.php:1033
+msgid "Norsk"
+msgstr ""
+
+#: template/instaplug-widget.php:1034
+msgid "Polski"
+msgstr ""
+
+#: template/instaplug-widget.php:1035
+msgid "Português"
+msgstr ""
+
+#: template/instaplug-widget.php:1036
+msgid "Română"
+msgstr ""
+
+#: template/instaplug-widget.php:1037
+msgid "Русский"
+msgstr ""
+
+#: template/instaplug-widget.php:1038
+msgid "Slovenčina"
+msgstr ""
+
+#: template/instaplug-widget.php:1039
+msgid "Slovenščina"
+msgstr ""
+
+#: template/instaplug-widget.php:1040
+msgid "Svenska"
+msgstr ""
+
+#: template/instaplug-widget.php:1041
+msgid "Türkçe"
+msgstr ""
+
+#: template/instaplug-widget.php:1042
+msgid "Українська"
+msgstr ""
+
+#: template/instaplug-widget.php:1043
+msgid "Tiếng Việt"
+msgstr ""
+
+#: template/instaplug-widget.php:1044
+msgid "中文"
+msgstr ""
+
+#: template/instaplug-widget.php:1066
+msgid "Posts"
+msgstr ""
+
+#: template/instaplug-widget.php:1070
+msgid "Followers"
+msgstr ""
+
+#: template/instaplug-widget.php:1074
+msgid "Following"
+msgstr ""
+
+#: template/instaplug-widget.php:1084
+msgid "Follow"
+msgstr ""
+
+#: template/instaplug-widget.php:1098
+msgid "Load more"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Social Media Feed Widget"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://instaplug.app/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A tool for embedding Instagram media feeds on your WordPress website, enhancing user engagement and social media presence with live, interactive content."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Logicwind"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.logicwind.com/"
+msgstr ""
